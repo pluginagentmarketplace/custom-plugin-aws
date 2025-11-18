@@ -1,0 +1,451 @@
+{
+  "version": "1.0.0",
+  "registry": {
+    "agents": [
+      {
+        "id": "foundation-core",
+        "name": "Foundation & Core Technologies",
+        "description": "Programming languages, algorithms, data structures, and computer science fundamentals",
+        "level": "beginner-to-advanced",
+        "roadmaps_count": 19,
+        "skills": [
+          "language-fundamentals",
+          "algorithms-datastructures",
+          "computer-science"
+        ],
+        "roadmaps": [
+          "javascript",
+          "typescript",
+          "python",
+          "java",
+          "rust",
+          "golang",
+          "cpp",
+          "php",
+          "kotlin",
+          "swift-ui",
+          "html",
+          "css",
+          "shell-bash",
+          "sql",
+          "datastructures-and-algorithms",
+          "computer-science",
+          "code-review",
+          "prompt-engineering"
+        ],
+        "projects": 15,
+        "estimated_hours": 300,
+        "prerequisites": []
+      },
+      {
+        "id": "frontend-ui",
+        "name": "Frontend & UI Development",
+        "description": "Web frameworks, responsive design, UX principles, and modern frontend development",
+        "level": "beginner-to-advanced",
+        "roadmaps_count": 8,
+        "skills": [
+          "frontend-frameworks",
+          "responsive-design"
+        ],
+        "roadmaps": [
+          "frontend",
+          "frontend-beginner",
+          "ux-design",
+          "react",
+          "vue",
+          "angular",
+          "nextjs",
+          "react-native",
+          "flutter",
+          "design-system"
+        ],
+        "projects": 20,
+        "estimated_hours": 400,
+        "prerequisites": [
+          "language-fundamentals",
+          "computer-science"
+        ]
+      },
+      {
+        "id": "backend-api",
+        "name": "Backend & API Development",
+        "description": "Backend frameworks, API design, database integration, and server-side architecture",
+        "level": "intermediate-to-advanced",
+        "roadmaps_count": 10,
+        "skills": [
+          "backend-frameworks",
+          "api-design",
+          "database-design"
+        ],
+        "roadmaps": [
+          "backend",
+          "backend-beginner",
+          "full-stack",
+          "nodejs",
+          "spring-boot",
+          "aspnet-core",
+          "laravel",
+          "api-design",
+          "graphql",
+          "best-practices/api-security",
+          "best-practices/backend-performance"
+        ],
+        "projects": 18,
+        "estimated_hours": 450,
+        "prerequisites": [
+          "language-fundamentals",
+          "algorithms-datastructures"
+        ]
+      },
+      {
+        "id": "devops-cloud",
+        "name": "DevOps & Cloud Infrastructure",
+        "description": "Cloud platforms, containerization, orchestration, and infrastructure automation",
+        "level": "intermediate-to-advanced",
+        "roadmaps_count": 11,
+        "skills": [
+          "cloud-platforms",
+          "containerization",
+          "infrastructure-as-code",
+          "devops-practices"
+        ],
+        "roadmaps": [
+          "devops",
+          "devops-beginner",
+          "aws",
+          "best-practices/aws",
+          "docker",
+          "kubernetes",
+          "terraform",
+          "linux",
+          "cloudflare",
+          "git-github",
+          "git-github-beginner",
+          "ai-agents"
+        ],
+        "projects": 12,
+        "estimated_hours": 400,
+        "prerequisites": [
+          "language-fundamentals"
+        ]
+      },
+      {
+        "id": "data-aiml",
+        "name": "Data & AI/ML Engineering",
+        "description": "Data engineering, machine learning, AI applications, and data science",
+        "level": "intermediate-to-advanced",
+        "roadmaps_count": 9,
+        "skills": [
+          "data-engineering",
+          "machine-learning",
+          "ai-tools-frameworks",
+          "data-science"
+        ],
+        "roadmaps": [
+          "data-engineer",
+          "data-analyst",
+          "ai-engineer",
+          "machine-learning",
+          "ai-data-scientist",
+          "mlops",
+          "bi-analyst",
+          "ai-agents",
+          "ai-red-teaming"
+        ],
+        "projects": 15,
+        "estimated_hours": 500,
+        "prerequisites": [
+          "language-fundamentals",
+          "algorithms-datastructures",
+          "computer-science"
+        ]
+      },
+      {
+        "id": "architecture-design",
+        "name": "Architecture & Design Patterns",
+        "description": "System design, architectural patterns, and software design principles",
+        "level": "advanced",
+        "roadmaps_count": 6,
+        "skills": [
+          "system-design",
+          "design-principles",
+          "api-design"
+        ],
+        "roadmaps": [
+          "software-architect",
+          "full-stack",
+          "system-design",
+          "software-design-architecture",
+          "api-design",
+          "design-system"
+        ],
+        "projects": 8,
+        "estimated_hours": 250,
+        "prerequisites": [
+          "backend-frameworks",
+          "database-design",
+          "system-design"
+        ]
+      },
+      {
+        "id": "specializations",
+        "name": "Specializations & Advanced Roles",
+        "description": "Management, blockchain, gaming, security, and specialized technologies",
+        "level": "advanced",
+        "roadmaps_count": 12,
+        "skills": [
+          "management-leadership",
+          "security-best-practices",
+          "database-design",
+          "specialized-domains"
+        ],
+        "roadmaps": [
+          "product-manager",
+          "engineering-manager",
+          "devrel",
+          "technical-writer",
+          "blockchain",
+          "game-developer",
+          "server-side-game-developer",
+          "cyber-security",
+          "postgresql-dba",
+          "mongodb",
+          "redis"
+        ],
+        "projects": 12,
+        "estimated_hours": 300,
+        "prerequisites": []
+      }
+    ],
+    "skill_dependencies": {
+      "frontend-frameworks": [
+        "language-fundamentals",
+        "responsive-design"
+      ],
+      "backend-frameworks": [
+        "language-fundamentals",
+        "database-design"
+      ],
+      "api-design": [
+        "backend-frameworks",
+        "database-design"
+      ],
+      "system-design": [
+        "backend-frameworks",
+        "database-design",
+        "algorithms-datastructures"
+      ],
+      "machine-learning": [
+        "language-fundamentals",
+        "algorithms-datastructures",
+        "data-engineering"
+      ],
+      "data-engineering": [
+        "language-fundamentals",
+        "database-design"
+      ],
+      "containerization": [
+        "devops-practices",
+        "backend-frameworks"
+      ],
+      "infrastructure-as-code": [
+        "cloud-platforms",
+        "containerization"
+      ]
+    },
+    "roadmap_to_agent_mapping": {
+      "javascript": "foundation-core",
+      "typescript": "foundation-core",
+      "python": "foundation-core",
+      "java": "foundation-core",
+      "rust": "foundation-core",
+      "golang": "foundation-core",
+      "cpp": "foundation-core",
+      "php": "foundation-core",
+      "kotlin": "foundation-core",
+      "swift-ui": "foundation-core",
+      "html": "foundation-core",
+      "css": "foundation-core",
+      "shell-bash": "foundation-core",
+      "sql": "foundation-core",
+      "datastructures-and-algorithms": "foundation-core",
+      "computer-science": "foundation-core",
+      "code-review": "foundation-core",
+      "prompt-engineering": "foundation-core",
+      "frontend": "frontend-ui",
+      "frontend-beginner": "frontend-ui",
+      "ux-design": "frontend-ui",
+      "react": "frontend-ui",
+      "vue": "frontend-ui",
+      "angular": "frontend-ui",
+      "nextjs": "frontend-ui",
+      "react-native": "frontend-ui",
+      "flutter": "frontend-ui",
+      "design-system": "frontend-ui",
+      "backend": "backend-api",
+      "backend-beginner": "backend-api",
+      "full-stack": "backend-api",
+      "nodejs": "backend-api",
+      "spring-boot": "backend-api",
+      "aspnet-core": "backend-api",
+      "laravel": "backend-api",
+      "api-design": "backend-api",
+      "graphql": "backend-api",
+      "devops": "devops-cloud",
+      "devops-beginner": "devops-cloud",
+      "aws": "devops-cloud",
+      "docker": "devops-cloud",
+      "kubernetes": "devops-cloud",
+      "terraform": "devops-cloud",
+      "linux": "devops-cloud",
+      "cloudflare": "devops-cloud",
+      "git-github": "devops-cloud",
+      "git-github-beginner": "devops-cloud",
+      "ai-agents": "devops-cloud",
+      "data-engineer": "data-aiml",
+      "data-analyst": "data-aiml",
+      "ai-engineer": "data-aiml",
+      "machine-learning": "data-aiml",
+      "ai-data-scientist": "data-aiml",
+      "mlops": "data-aiml",
+      "bi-analyst": "data-aiml",
+      "ai-red-teaming": "data-aiml",
+      "software-architect": "architecture-design",
+      "system-design": "architecture-design",
+      "software-design-architecture": "architecture-design",
+      "product-manager": "specializations",
+      "engineering-manager": "specializations",
+      "devrel": "specializations",
+      "technical-writer": "specializations",
+      "blockchain": "specializations",
+      "game-developer": "specializations",
+      "server-side-game-developer": "specializations",
+      "cyber-security": "specializations",
+      "postgresql-dba": "specializations",
+      "mongodb": "specializations",
+      "redis": "specializations"
+    },
+    "learning_paths": {
+      "frontend-developer": {
+        "duration_months": 6,
+        "agents": [
+          "foundation-core",
+          "frontend-ui"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "responsive-design",
+          "frontend-frameworks",
+          "algorithms-datastructures"
+        ],
+        "estimated_hours": 600
+      },
+      "backend-developer": {
+        "duration_months": 12,
+        "agents": [
+          "foundation-core",
+          "backend-api",
+          "devops-cloud"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "algorithms-datastructures",
+          "database-design",
+          "backend-frameworks",
+          "api-design",
+          "security-best-practices",
+          "devops-practices"
+        ],
+        "estimated_hours": 1200
+      },
+      "full-stack-developer": {
+        "duration_months": 14,
+        "agents": [
+          "foundation-core",
+          "frontend-ui",
+          "backend-api",
+          "devops-cloud"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "responsive-design",
+          "frontend-frameworks",
+          "backend-frameworks",
+          "api-design",
+          "database-design",
+          "devops-practices"
+        ],
+        "estimated_hours": 1400
+      },
+      "devops-engineer": {
+        "duration_months": 18,
+        "agents": [
+          "foundation-core",
+          "devops-cloud",
+          "architecture-design"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "cloud-platforms",
+          "containerization",
+          "infrastructure-as-code",
+          "devops-practices",
+          "security-best-practices",
+          "system-design"
+        ],
+        "estimated_hours": 1800
+      },
+      "data-engineer": {
+        "duration_months": 12,
+        "agents": [
+          "foundation-core",
+          "data-aiml",
+          "devops-cloud"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "algorithms-datastructures",
+          "database-design",
+          "data-engineering",
+          "devops-practices"
+        ],
+        "estimated_hours": 1200
+      },
+      "ml-engineer": {
+        "duration_months": 18,
+        "agents": [
+          "foundation-core",
+          "data-aiml",
+          "devops-cloud"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "algorithms-datastructures",
+          "computer-science",
+          "data-science",
+          "machine-learning",
+          "data-engineering",
+          "devops-practices"
+        ],
+        "estimated_hours": 1800
+      },
+      "ai-engineer": {
+        "duration_months": 18,
+        "agents": [
+          "foundation-core",
+          "data-aiml",
+          "backend-api"
+        ],
+        "skills_sequence": [
+          "language-fundamentals",
+          "machine-learning",
+          "ai-tools-frameworks",
+          "data-science",
+          "api-design",
+          "backend-frameworks"
+        ],
+        "estimated_hours": 1800
+      }
+    }
+  }
+}
