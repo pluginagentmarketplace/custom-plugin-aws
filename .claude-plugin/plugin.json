@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Developer Roadmap Plugin",
+  "version": "1.0.0",
+  "description": "Comprehensive learning and career development plugin with 81 roadmaps across 7 specialized agent categories, covering 25 roles, 14 languages, 17 frameworks, and 10+ infrastructure technologies",
+  "author": "Claude Code Official",
+  "author_url": "https://github.com/kamranahmedse/developer-roadmap",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-aws",
+  "keywords": [
+    "learning",
+    "career-development",
+    "roadmap",
+    "education",
+    "programming",
+    "devops",
+    "frontend",
+    "backend",
+    "data-engineering",
+    "ai-ml",
+    "cloud-infrastructure"
+  ],
+  "agents": [
+    {
+      "name": "Foundation & Core Technologies",
+      "id": "foundation-core",
+      "path": "agents/01-foundation-core.md",
+      "description": "Programming languages, algorithms, data structures, and CS fundamentals"
+    },
+    {
+      "name": "Frontend & UI Development",
+      "id": "frontend-ui",
+      "path": "agents/02-frontend-ui.md",
+      "description": "Frontend frameworks, UI/UX design, responsive design, and modern web development"
+    },
+    {
+      "name": "Backend & API Development",
+      "id": "backend-api",
+      "path": "agents/03-backend-api.md",
+      "description": "Backend frameworks, API design, microservices, and server-side technologies"
+    },
+    {
+      "name": "DevOps & Cloud Infrastructure",
+      "id": "devops-cloud",
+      "path": "agents/04-devops-cloud.md",
+      "description": "Cloud platforms, containerization, orchestration, and infrastructure automation"
+    },
+    {
+      "name": "Data & AI/ML Engineering",
+      "id": "data-aiml",
+      "path": "agents/05-data-aiml.md",
+      "description": "Data engineering, machine learning, AI, analytics, and data science"
+    },
+    {
+      "name": "Architecture & Design Patterns",
+      "id": "architecture-design",
+      "path": "agents/06-architecture-design.md",
+      "description": "System design, architectural patterns, software design principles, and scalability"
+    },
+    {
+      "name": "Specializations & Advanced Roles",
+      "id": "specializations",
+      "path": "agents/07-specializations.md",
+      "description": "Management, blockchain, gaming, security, specialized databases, and niche technologies"
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "path": "commands/learn.md",
+      "description": "Start your learning journey with personalized roadmap selection"
+    },
+    {
+      "name": "browse",
+      "path": "commands/browse.md",
+      "description": "Explore all 81 roadmaps across 7 agent categories"
+    },
+    {
+      "name": "assess",
+      "path": "commands/assess.md",
+      "description": "Evaluate your current knowledge and get personalized learning paths"
+    },
+    {
+      "name": "compare",
+      "path": "commands/compare.md",
+      "description": "Compare different roadmaps and career paths side-by-side"
+    },
+    {
+      "name": "projects",
+      "path": "commands/projects.md",
+      "description": "Explore 100+ hands-on projects aligned with each roadmap"
+    }
+  ],
+  "skills": [
+    {
+      "name": "language-fundamentals",
+      "path": "skills/language-fundamentals/SKILL.md",
+      "description": "Programming language fundamentals and core concepts"
+    },
+    {
+      "name": "algorithms-datastructures",
+      "path": "skills/algorithms-datastructures/SKILL.md",
+      "description": "Algorithms, data structures, and computational complexity"
+    },
+    {
+      "name": "computer-science",
+      "path": "skills/computer-science/SKILL.md",
+      "description": "Computer science fundamentals and theory"
+    },
+    {
+      "name": "frontend-frameworks",
+      "path": "skills/frontend-frameworks/SKILL.md",
+      "description": "React, Vue, Angular, Next.js, and modern frontend frameworks"
+    },
+    {
+      "name": "responsive-design",
+      "path": "skills/responsive-design/SKILL.md",
+      "description": "Responsive design, CSS, HTML, and UI principles"
+    },
+    {
+      "name": "backend-frameworks",
+      "path": "skills/backend-frameworks/SKILL.md",
+      "description": "Node.js, Spring Boot, ASP.NET Core, Laravel, and backend frameworks"
+    },
+    {
+      "name": "api-design",
+      "path": "skills/api-design/SKILL.md",
+      "description": "API design, REST, GraphQL, and API security best practices"
+    },
+    {
+      "name": "cloud-platforms",
+      "path": "skills/cloud-platforms/SKILL.md",
+      "description": "AWS, Azure, GCP, and cloud infrastructure fundamentals"
+    },
+    {
+      "name": "containerization",
+      "path": "skills/containerization/SKILL.md",
+      "description": "Docker, container orchestration, and container best practices"
+    },
+    {
+      "name": "infrastructure-as-code",
+      "path": "skills/infrastructure-as-code/SKILL.md",
+      "description": "Terraform, Kubernetes, and infrastructure automation"
+    },
+    {
+      "name": "data-engineering",
+      "path": "skills/data-engineering/SKILL.md",
+      "description": "Data pipelines, warehousing, ETL, and data infrastructure"
+    },
+    {
+      "name": "machine-learning",
+      "path": "skills/machine-learning/SKILL.md",
+      "description": "Machine learning algorithms, models, and ML engineering"
+    },
+    {
+      "name": "ai-tools-frameworks",
+      "path": "skills/ai-tools-frameworks/SKILL.md",
+      "description": "AI tools, LLMs, prompt engineering, and AI frameworks"
+    },
+    {
+      "name": "data-science",
+      "path": "skills/data-science/SKILL.md",
+      "description": "Data analysis, statistics, visualization, and data science"
+    },
+    {
+      "name": "system-design",
+      "path": "skills/system-design/SKILL.md",
+      "description": "Large-scale system design and architecture patterns"
+    },
+    {
+      "name": "design-principles",
+      "path": "skills/design-principles/SKILL.md",
+      "description": "Software design principles, SOLID, and design patterns"
+    },
+    {
+      "name": "devops-practices",
+      "path": "skills/devops-practices/SKILL.md",
+      "description": "DevOps culture, CI/CD, monitoring, and operational excellence"
+    },
+    {
+      "name": "security-best-practices",
+      "path": "skills/security-best-practices/SKILL.md",
+      "description": "Cybersecurity, application security, and security best practices"
+    },
+    {
+      "name": "database-design",
+      "path": "skills/database-design/SKILL.md",
+      "description": "Database design, SQL, NoSQL, and database specializations"
+    },
+    {
+      "name": "management-leadership",
+      "path": "skills/management-leadership/SKILL.md",
+      "description": "Team management, engineering leadership, and product management"
+    },
+    {
+      "name": "specialized-domains",
+      "path": "skills/specialized-domains/SKILL.md",
+      "description": "Blockchain, game development, and specialized technical domains"
+    }
+  ],
+  "hooks": {
+    "hooks_config_path": "hooks/hooks.json"
+  }
+}
