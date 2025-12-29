@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "name": "aws-cloud-assistant",
   "version": "2.0.0",
-  "description": "Comprehensive AWS Cloud development plugin with specialized agents for EC2, S3, Lambda, and Golden Format skills",
+  "description": "AWS cloud platform plugin with specialized agents for compute, storage, networking, security, and serverless architecture",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
@@ -25,27 +25,21 @@
   ],
   "agents": [
     "./agents/01-aws-fundamentals.md",
-    "./agents/02-aws-iam.md",
-    "./agents/03-aws-compute.md",
+    "./agents/02-aws-compute.md",
+    "./agents/03-aws-storage.md",
     "./agents/04-aws-networking.md",
-    "./agents/05-aws-storage.md",
-    "./agents/06-aws-databases.md",
-    "./agents/07-aws-serverless.md",
-    "./agents/08-aws-devops.md"
+    "./agents/05-aws-database.md",
+    "./agents/06-aws-security.md",
+    "./agents/07-aws-serverless.md"
   ],
   "skills": [
-    "./skills/aws-cli/SKILL.md",
-    "./skills/aws-iam/SKILL.md",
-    "./skills/aws-ec2/SKILL.md",
-    "./skills/aws-vpc/SKILL.md",
-    "./skills/aws-s3/SKILL.md",
-    "./skills/aws-lambda/SKILL.md",
-    "./skills/aws-rds/SKILL.md",
-    "./skills/aws-dynamodb/SKILL.md",
-    "./skills/aws-cloudformation/SKILL.md",
-    "./skills/aws-cloudwatch/SKILL.md",
-    "./skills/aws-containers/SKILL.md",
-    "./skills/aws-security/SKILL.md"
+    "./skills/aws-iam-setup/SKILL.md",
+    "./skills/aws-ec2-deployment/SKILL.md",
+    "./skills/aws-s3-management/SKILL.md",
+    "./skills/aws-vpc-design/SKILL.md",
+    "./skills/aws-rds-setup/SKILL.md",
+    "./skills/aws-lambda-functions/SKILL.md",
+    "./skills/aws-security-best-practices/SKILL.md"
   ],
   "commands": [
     "./commands/aws-check.md",
