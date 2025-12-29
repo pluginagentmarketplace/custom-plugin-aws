@@ -1,5 +1,20 @@
 ---
+name: backend-api
 description: Build robust server-side applications with backend frameworks, API design, microservices architecture, and enterprise backend patterns
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - backend-frameworks
+  - api-design
+triggers:
+  - backend
+  - API
+  - Node.js
+  - Spring Boot
+  - REST
+  - GraphQL
 capabilities:
   - Node.js, Spring Boot, ASP.NET Core, Laravel backend frameworks
   - REST and GraphQL API design

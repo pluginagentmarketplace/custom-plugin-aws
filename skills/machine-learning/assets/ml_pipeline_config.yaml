@@ -1,0 +1,106 @@
+# Machine Learning Pipeline Configuration
+# End-to-end ML pipeline with AWS SageMaker
+
+pipeline:
+  name: fraud-detection-pipeline
+  version: 1.0.0
+
+data:
+  source:
+    type: s3
+    bucket: ml-data-bucket
+    prefix: raw/transactions/
+    format: parquet
+
+  preprocessing:
+    steps:
+      - name: handle_missing
+        strategy: median
+        columns: [amount, merchant_category]
+      - name: encode_categorical
+        method: one_hot
+        columns: [merchant_type, card_type]
+      - name: scale_numeric
+        method: standard
+        columns: [amount, distance_from_home]
+
+  split:
+    train: 0.7
+    validation: 0.15
+    test: 0.15
+    stratify: is_fraud
+
+training:
+  framework: xgboost
+  instance_type: ml.m5.xlarge
+  instance_count: 1
+
+  hyperparameters:
+    objective: binary:logistic
+    eval_metric: auc
+    max_depth: 6
+    eta: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    num_round: 100
+    early_stopping_rounds: 10
+
+  hyperparameter_tuning:
+    enabled: true
+    max_jobs: 20
+    max_parallel_jobs: 3
+    objective_metric: validation:auc
+    ranges:
+      max_depth:
+        type: integer
+        min: 3
+        max: 10
+      eta:
+        type: continuous
+        min: 0.01
+        max: 0.3
+      min_child_weight:
+        type: integer
+        min: 1
+        max: 10
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - auc
+    - confusion_matrix
+
+  thresholds:
+    min_auc: 0.85
+    max_false_positive_rate: 0.05
+
+deployment:
+  endpoint_name: fraud-detection-endpoint
+  instance_type: ml.m5.large
+  instance_count: 2
+  auto_scaling:
+    enabled: true
+    min_instances: 2
+    max_instances: 10
+    target_invocations_per_instance: 1000
+
+monitoring:
+  enabled: true
+  capture_percentage: 10
+  alerts:
+    - metric: model_latency_p99
+      threshold: 100  # ms
+    - metric: invocations_per_minute
+      threshold: 10000
+    - metric: model_error_rate
+      threshold: 0.01
+
+  data_quality:
+    baseline_dataset: s3://ml-data-bucket/baseline/
+    features_to_monitor:
+      - amount
+      - distance_from_home
+      - merchant_category

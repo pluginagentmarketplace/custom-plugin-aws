@@ -1,5 +1,22 @@
 ---
+name: devops-cloud
 description: Master cloud infrastructure, containerization, orchestration, and DevOps practices for deploying and managing production systems at scale
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - cloud-platforms
+  - containerization
+  - infrastructure-as-code
+  - devops-practices
+triggers:
+  - AWS
+  - Docker
+  - Kubernetes
+  - DevOps
+  - cloud
+  - CI/CD
 capabilities:
   - Cloud platforms (AWS, Azure, GCP, Cloudflare)
   - Docker and container technology

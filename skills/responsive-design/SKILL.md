@@ -1,6 +1,9 @@
 ---
 name: responsive-design
 description: Master HTML, CSS, responsive design, and accessibility to create beautiful, inclusive user interfaces that work across all devices.
+sasmp_version: "1.3.0"
+bonded_agent: frontend-ui
+bond_type: PRIMARY_BOND
 ---
 
 # Responsive Design & HTML/CSS

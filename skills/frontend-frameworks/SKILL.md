@@ -1,6 +1,9 @@
 ---
 name: frontend-frameworks
 description: Master modern frontend frameworks including React, Vue, Angular, and Next.js for building interactive, performant web applications.
+sasmp_version: "1.3.0"
+bonded_agent: frontend-ui
+bond_type: PRIMARY_BOND
 ---
 
 # Frontend Frameworks

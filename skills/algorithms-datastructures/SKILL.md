@@ -1,6 +1,9 @@
 ---
 name: algorithms-datastructures
 description: Master algorithms and data structures including arrays, linked lists, trees, graphs, sorting, searching, and complexity analysis for optimal performance.
+sasmp_version: "1.3.0"
+bonded_agent: foundation-core
+bond_type: PRIMARY_BOND
 ---
 
 # Algorithms & Data Structures

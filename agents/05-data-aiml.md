@@ -1,5 +1,21 @@
 ---
+name: data-aiml
 description: Excel in data engineering, machine learning, AI development, and data science with modern tools, frameworks, and production-grade systems
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - data-engineering
+  - machine-learning
+  - ai-tools-frameworks
+  - data-science
+triggers:
+  - data engineering
+  - machine learning
+  - AI
+  - data science
+  - MLOps
 capabilities:
   - Data engineering and ETL/ELT pipelines
   - Machine learning algorithms and frameworks

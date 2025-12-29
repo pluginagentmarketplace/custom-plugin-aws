@@ -1,0 +1,100 @@
+# Terraform Module Configuration Template
+# Standard structure for reusable infrastructure modules
+
+module:
+  name: example-vpc
+  version: 1.0.0
+  description: "Production-ready VPC module with public/private subnets"
+
+  # Provider requirements
+  providers:
+    aws:
+      version: ">= 5.0.0"
+      region: "${var.region}"
+
+  # Input variables
+  variables:
+    vpc_cidr:
+      type: string
+      default: "10.0.0.0/16"
+      description: "CIDR block for VPC"
+
+    environment:
+      type: string
+      validation:
+        condition: contains(["dev", "staging", "prod"], var.environment)
+        error_message: "Environment must be dev, staging, or prod"
+
+    availability_zones:
+      type: list(string)
+      default:
+        - us-east-1a
+        - us-east-1b
+
+    enable_nat_gateway:
+      type: bool
+      default: true
+
+    single_nat_gateway:
+      type: bool
+      default: false
+      description: "Use single NAT gateway (cost savings) or one per AZ (HA)"
+
+  # Resource naming convention
+  naming:
+    pattern: "${var.project}-${var.environment}-${local.resource_type}"
+    tags:
+      Environment: "${var.environment}"
+      ManagedBy: terraform
+      Module: example-vpc
+      Project: "${var.project}"
+
+  # Outputs
+  outputs:
+    vpc_id:
+      value: aws_vpc.main.id
+      description: "VPC ID"
+
+    public_subnet_ids:
+      value: aws_subnet.public[*].id
+      description: "List of public subnet IDs"
+
+    private_subnet_ids:
+      value: aws_subnet.private[*].id
+      description: "List of private subnet IDs"
+
+    nat_gateway_ips:
+      value: aws_eip.nat[*].public_ip
+      description: "NAT Gateway public IPs"
+
+# CloudFormation equivalent
+cloudformation:
+  AWSTemplateFormatVersion: "2010-09-09"
+  Description: "VPC with public and private subnets"
+
+  Parameters:
+    VpcCidr:
+      Type: String
+      Default: "10.0.0.0/16"
+    Environment:
+      Type: String
+      AllowedValues:
+        - dev
+        - staging
+        - prod
+
+  Resources:
+    VPC:
+      Type: AWS::EC2::VPC
+      Properties:
+        CidrBlock: !Ref VpcCidr
+        EnableDnsHostnames: true
+        EnableDnsSupport: true
+
+# Pulumi equivalent (TypeScript)
+pulumi:
+  project: example-vpc
+  runtime: nodejs
+  config:
+    aws:region: us-east-1
+    vpcCidr: "10.0.0.0/16"

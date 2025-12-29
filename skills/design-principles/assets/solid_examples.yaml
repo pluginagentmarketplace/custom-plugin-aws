@@ -1,0 +1,21 @@
+# SOLID Principles Examples
+principles:
+  single_responsibility:
+    description: "One class, one reason to change"
+    example: "UserService handles users, EmailService handles emails"
+
+  open_closed:
+    description: "Open for extension, closed for modification"
+    example: "Add new payment methods without changing existing code"
+
+  liskov_substitution:
+    description: "Subtypes must be substitutable for base types"
+    example: "Square should behave correctly when used as Rectangle"
+
+  interface_segregation:
+    description: "Many specific interfaces > one general interface"
+    example: "Printer, Scanner, Fax interfaces instead of AllInOne"
+
+  dependency_inversion:
+    description: "Depend on abstractions, not concretions"
+    example: "Repository interface instead of direct DB dependency"

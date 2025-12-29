@@ -1,0 +1,31 @@
+# Programming Language Comparison
+languages:
+  python:
+    paradigm: [oop, functional, procedural]
+    typing: dynamic
+    use_cases: [data_science, web, automation]
+    learning_curve: easy
+
+  javascript:
+    paradigm: [oop, functional, event_driven]
+    typing: dynamic
+    use_cases: [web, nodejs, mobile]
+    learning_curve: medium
+
+  typescript:
+    paradigm: [oop, functional]
+    typing: static
+    use_cases: [enterprise_web, nodejs]
+    learning_curve: medium
+
+  go:
+    paradigm: [procedural, concurrent]
+    typing: static
+    use_cases: [cloud, cli, microservices]
+    learning_curve: easy
+
+  rust:
+    paradigm: [oop, functional, concurrent]
+    typing: static
+    use_cases: [systems, performance, wasm]
+    learning_curve: hard

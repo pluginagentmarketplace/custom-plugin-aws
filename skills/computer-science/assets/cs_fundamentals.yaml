@@ -1,0 +1,27 @@
+# Computer Science Fundamentals
+topics:
+  data_structures:
+    - arrays
+    - linked_lists
+    - trees
+    - graphs
+    - hash_tables
+
+  algorithms:
+    - sorting
+    - searching
+    - dynamic_programming
+    - greedy
+    - divide_and_conquer
+
+  theory:
+    - complexity_analysis
+    - computability
+    - automata_theory
+    - discrete_math
+
+  systems:
+    - operating_systems
+    - networking
+    - databases
+    - distributed_systems

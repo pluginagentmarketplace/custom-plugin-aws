@@ -1,0 +1,151 @@
+# Security Policy Configuration Template
+# Comprehensive security controls for cloud applications
+
+security_policy:
+  version: "1.0"
+  last_updated: "2024-01-01"
+
+  authentication:
+    methods:
+      - type: oauth2
+        providers:
+          - google
+          - github
+          - azure_ad
+      - type: jwt
+        algorithm: RS256
+        expiration: 3600  # seconds
+        refresh_enabled: true
+        refresh_expiration: 604800  # 7 days
+
+    password_policy:
+      min_length: 12
+      require_uppercase: true
+      require_lowercase: true
+      require_numbers: true
+      require_special_chars: true
+      prevent_reuse: 10  # last N passwords
+      max_age_days: 90
+      lockout_attempts: 5
+      lockout_duration: 900  # seconds
+
+    mfa:
+      required: true
+      methods:
+        - totp  # Google Authenticator
+        - sms
+        - email
+        - webauthn
+
+  authorization:
+    model: rbac  # rbac, abac, or hybrid
+    roles:
+      admin:
+        permissions:
+          - "*:*"
+      developer:
+        permissions:
+          - "read:*"
+          - "write:code"
+          - "deploy:staging"
+      viewer:
+        permissions:
+          - "read:*"
+
+  network:
+    firewall:
+      default_action: deny
+      rules:
+        - name: allow_https
+          port: 443
+          protocol: tcp
+          source: "0.0.0.0/0"
+          action: allow
+        - name: allow_ssh_vpn
+          port: 22
+          protocol: tcp
+          source: "10.0.0.0/8"
+          action: allow
+
+    rate_limiting:
+      enabled: true
+      requests_per_second: 100
+      burst_size: 200
+      by: ip  # ip, user, api_key
+
+    cors:
+      allowed_origins:
+        - "https://example.com"
+        - "https://app.example.com"
+      allowed_methods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+      allowed_headers:
+        - Authorization
+        - Content-Type
+      max_age: 3600
+
+  encryption:
+    at_rest:
+      enabled: true
+      algorithm: AES-256-GCM
+      key_management: aws_kms  # aws_kms, vault, azure_keyvault
+
+    in_transit:
+      tls_version: "1.3"
+      cipher_suites:
+        - TLS_AES_256_GCM_SHA384
+        - TLS_CHACHA20_POLY1305_SHA256
+      hsts_enabled: true
+      hsts_max_age: 31536000
+
+  secrets_management:
+    provider: vault  # vault, aws_secrets_manager, azure_keyvault
+    rotation:
+      enabled: true
+      interval_days: 30
+    audit_logging: true
+
+  input_validation:
+    enabled: true
+    rules:
+      - field: email
+        type: email
+        max_length: 255
+      - field: username
+        type: alphanumeric
+        min_length: 3
+        max_length: 50
+      - field: password
+        type: password
+        min_length: 12
+
+  logging:
+    security_events:
+      - authentication_success
+      - authentication_failure
+      - authorization_failure
+      - password_change
+      - mfa_enrollment
+      - suspicious_activity
+    retention_days: 90
+    encryption: true
+
+  vulnerability_scanning:
+    container_scanning: true
+    dependency_scanning: true
+    sast_enabled: true
+    dast_enabled: true
+    scan_frequency: daily
+
+  compliance:
+    frameworks:
+      - SOC2
+      - GDPR
+      - HIPAA
+    data_retention:
+      user_data: 365
+      logs: 90
+      backups: 30

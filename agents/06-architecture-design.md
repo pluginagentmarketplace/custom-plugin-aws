@@ -1,5 +1,19 @@
 ---
+name: architecture-design
 description: Design scalable systems and applications using proven architectural patterns, design principles, and system design methodologies
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - system-design
+  - design-principles
+triggers:
+  - system design
+  - architecture
+  - design patterns
+  - SOLID
+  - scalability
 capabilities:
   - System design and architecture
   - Design patterns and SOLID principles

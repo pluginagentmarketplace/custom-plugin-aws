@@ -1,6 +1,9 @@
 ---
 name: cloud-platforms
 description: Master AWS, Azure, GCP, and cloud infrastructure for deploying and scaling applications globally with security and reliability.
+sasmp_version: "1.3.0"
+bonded_agent: devops-cloud
+bond_type: PRIMARY_BOND
 ---
 
 # Cloud Platforms & Services

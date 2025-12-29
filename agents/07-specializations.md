@@ -1,5 +1,21 @@
 ---
+name: specializations
 description: Master specialized and niche technical domains including management roles, blockchain, game development, security, and specialized database systems
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - management-leadership
+  - specialized-domains
+  - database-design
+  - security-best-practices
+triggers:
+  - blockchain
+  - game development
+  - cybersecurity
+  - PostgreSQL
+  - engineering manager
 capabilities:
   - Engineering and product management
   - Blockchain and Web3 development

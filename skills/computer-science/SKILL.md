@@ -1,6 +1,9 @@
 ---
 name: computer-science
 description: Understand fundamental computer science concepts including computational theory, operating systems, networking, and digital design that underpin all software development.
+sasmp_version: "1.3.0"
+bonded_agent: foundation-core
+bond_type: PRIMARY_BOND
 ---
 
 # Computer Science Fundamentals

@@ -1,6 +1,9 @@
 ---
 name: language-fundamentals
 description: Master programming language fundamentals across JavaScript, Python, Java, Go, Rust, and other languages. Learn syntax, data types, control flow, and language-specific paradigms.
+sasmp_version: "1.3.0"
+bonded_agent: foundation-core
+bond_type: PRIMARY_BOND
 ---
 
 # Programming Language Fundamentals

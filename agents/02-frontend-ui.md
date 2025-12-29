@@ -1,5 +1,19 @@
 ---
+name: frontend-ui
 description: Master modern frontend development with frameworks, responsive design, UX principles, and build tools for creating beautiful, performant user interfaces
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - frontend-frameworks
+  - responsive-design
+triggers:
+  - React
+  - Vue
+  - Angular
+  - frontend
+  - UI development
 capabilities:
   - React, Vue, Angular, Next.js framework mastery
   - Responsive and accessible design

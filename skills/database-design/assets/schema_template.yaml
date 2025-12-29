@@ -1,0 +1,167 @@
+# Database Schema Design Template
+# PostgreSQL schema with best practices
+
+database:
+  name: application_db
+  encoding: UTF8
+  collation: en_US.UTF-8
+
+schemas:
+  - name: public
+    description: "Core application tables"
+  - name: audit
+    description: "Audit and logging tables"
+  - name: analytics
+    description: "Analytics and reporting views"
+
+tables:
+  users:
+    schema: public
+    columns:
+      - name: id
+        type: uuid
+        primary_key: true
+        default: gen_random_uuid()
+      - name: email
+        type: varchar(255)
+        unique: true
+        not_null: true
+      - name: password_hash
+        type: varchar(255)
+        not_null: true
+      - name: status
+        type: user_status_enum
+        default: "'pending'"
+      - name: created_at
+        type: timestamptz
+        default: now()
+      - name: updated_at
+        type: timestamptz
+        default: now()
+    indexes:
+      - name: idx_users_email
+        columns: [email]
+        unique: true
+      - name: idx_users_status
+        columns: [status]
+    constraints:
+      - type: check
+        name: chk_email_format
+        condition: "email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$'"
+
+  organizations:
+    schema: public
+    columns:
+      - name: id
+        type: uuid
+        primary_key: true
+        default: gen_random_uuid()
+      - name: name
+        type: varchar(255)
+        not_null: true
+      - name: slug
+        type: varchar(100)
+        unique: true
+      - name: settings
+        type: jsonb
+        default: "'{}'::jsonb"
+      - name: created_at
+        type: timestamptz
+        default: now()
+    indexes:
+      - name: idx_org_slug
+        columns: [slug]
+        unique: true
+      - name: idx_org_settings
+        type: gin
+        columns: [settings]
+
+  user_organizations:
+    schema: public
+    columns:
+      - name: user_id
+        type: uuid
+        not_null: true
+        references: users(id)
+        on_delete: cascade
+      - name: organization_id
+        type: uuid
+        not_null: true
+        references: organizations(id)
+        on_delete: cascade
+      - name: role
+        type: org_role_enum
+        default: "'member'"
+      - name: joined_at
+        type: timestamptz
+        default: now()
+    primary_key: [user_id, organization_id]
+    indexes:
+      - name: idx_user_orgs_org
+        columns: [organization_id]
+
+  audit_logs:
+    schema: audit
+    columns:
+      - name: id
+        type: bigserial
+        primary_key: true
+      - name: table_name
+        type: varchar(100)
+        not_null: true
+      - name: record_id
+        type: uuid
+        not_null: true
+      - name: action
+        type: audit_action_enum
+        not_null: true
+      - name: old_data
+        type: jsonb
+      - name: new_data
+        type: jsonb
+      - name: user_id
+        type: uuid
+      - name: ip_address
+        type: inet
+      - name: created_at
+        type: timestamptz
+        default: now()
+    indexes:
+      - name: idx_audit_table_record
+        columns: [table_name, record_id]
+      - name: idx_audit_created
+        columns: [created_at]
+    partitioning:
+      type: range
+      column: created_at
+      interval: monthly
+
+enums:
+  user_status_enum:
+    values: [pending, active, suspended, deleted]
+  org_role_enum:
+    values: [owner, admin, member, viewer]
+  audit_action_enum:
+    values: [insert, update, delete]
+
+functions:
+  update_timestamp:
+    returns: trigger
+    language: plpgsql
+    body: |
+      BEGIN
+        NEW.updated_at = now();
+        RETURN NEW;
+      END;
+
+triggers:
+  - name: trg_users_updated
+    table: users
+    timing: before
+    event: update
+    function: update_timestamp()
+
+extensions:
+  - pgcrypto
+  - uuid-ossp
+  - pg_trgm

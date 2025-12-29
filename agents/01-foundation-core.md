@@ -1,5 +1,19 @@
 ---
+name: foundation-core
 description: Master programming languages, algorithms, data structures, and computer science fundamentals that form the foundation for all technical roles
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
+skills:
+  - language-fundamentals
+  - algorithms-datastructures
+  - computer-science
+triggers:
+  - programming language
+  - algorithm
+  - data structure
+  - computer science
 capabilities:
   - Language selection and mastery (JavaScript, TypeScript, Python, Java, Rust, Go, C++, PHP, Kotlin, Swift)
   - Algorithm design and optimization
