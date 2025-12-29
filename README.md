@@ -1,389 +1,267 @@
-# 🚀 Developer Roadmap Plugin
+<div align="center">
 
-## Ultra-Professional Learning & Career Development Platform
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Aws+Assistant;8+Agents+%7C+12+Skills;Claude+Code+Plugin" alt="Aws Assistant" />
 
-A comprehensive Claude Code plugin with **81 developer roadmaps**, **7 specialized agents**, **21 advanced skills**, **5 interactive commands**, **100+ hands-on projects**, and **15+ automation hooks**.
+<br/>
 
-### ✨ Key Features
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-aws/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
-- **81 Complete Roadmaps** - All paths from basic programming to advanced specializations
-- **7 Specialized Agents** - Foundation, Frontend, Backend, DevOps, Data/AI, Architecture, Specializations
-- **21 Production-Grade Skills** - Deeply detailed technical skills for each domain
-- **5 Interactive Commands** - /learn, /browse, /assess, /compare, /projects
-- **100+ Hands-On Projects** - Real-world applications across all skill levels
-- **15+ Automation Hooks** - Learning progress tracking, recommendations, certifications
-- **Industry-Standard Format** - Official Claude Code plugin specification compliant
-- **Production-Ready** - Enterprise-grade documentation, security, scalability
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
----
+<br/>
 
-## 📦 Plugin Structure
-
-```
-custom-plugin-aws/
-├── .claude-plugin/
-│   └── plugin.json ..................... Plugin manifest & configuration
-│
-├── agents/
-│   ├── 01-foundation-core.md ........... Languages, algorithms, CS fundamentals
-│   ├── 02-frontend-ui.md .............. React, Vue, Angular, responsive design
-│   ├── 03-backend-api.md .............. Node.js, Django, Spring Boot, APIs
-│   ├── 04-devops-cloud.md ............. AWS, Docker, Kubernetes, Infrastructure
-│   ├── 05-data-aiml.md ................ Data Engineering, ML, AI, LLMs
-│   ├── 06-architecture-design.md ....... System Design, Patterns, Scalability
-│   └── 07-specializations.md .......... Management, Blockchain, Security, Gaming
-│
-├── commands/
-│   ├── learn.md ....................... Personalized learning path selection
-│   ├── browse.md ...................... Explore all 81 roadmaps
-│   ├── assess.md ...................... Knowledge assessment & gap analysis
-│   ├── compare.md ..................... Technology & path comparison
-│   └── projects.md .................... 100+ hands-on project gallery
-│
-├── skills/ (21 SKILL.md files)
-│   ├── language-fundamentals/ ......... Programming languages
-│   ├── algorithms-datastructures/ .... Algorithms & data structures
-│   ├── computer-science/ ............. CS fundamentals
-│   ├── frontend-frameworks/ .......... React, Vue, Angular, Next.js
-│   ├── responsive-design/ ............ HTML, CSS, accessibility
-│   ├── backend-frameworks/ ........... Node.js, Django, Spring Boot
-│   ├── api-design/ ................... REST, GraphQL, API architecture
-│   ├── cloud-platforms/ .............. AWS, Azure, GCP
-│   ├── containerization/ ............. Docker, container best practices
-│   ├── infrastructure-as-code/ ....... Terraform, CloudFormation, K8s
-│   ├── data-engineering/ ............. ETL, pipelines, warehousing
-│   ├── machine-learning/ ............. Algorithms, models, frameworks
-│   ├── ai-tools-frameworks/ .......... LLMs, prompt engineering, RAG
-│   ├── data-science/ ................. Analytics, visualization, statistics
-│   ├── system-design/ ................ Scalability, patterns, distribution
-│   ├── design-principles/ ............ SOLID, design patterns
-│   ├── devops-practices/ ............. CI/CD, monitoring, operations
-│   ├── security-best-practices/ ...... Cryptography, secure coding
-│   ├── database-design/ .............. SQL, NoSQL, optimization
-│   ├── management-leadership/ ........ Team management, product management
-│   └── specialized-domains/ .......... Blockchain, gaming, security
-│
-├── hooks/
-│   └── hooks.json ..................... 15+ automation hooks for learning
-│
-├── config/
-│   └── agent-registry.json ............ Agent configuration & mapping
-│
-├── README.md .......................... This file
-├── ARCHITECTURE.md .................... System design & integration
-├── LEARNING-PATH.md ................... Guided learning journeys
-├── INTEGRATION-GUIDE.md ............... Integration with other tools
-└── CHANGELOG.md ....................... Version history & updates
-```
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-aws)
 
 ---
 
-## 🎯 Use Cases
+### What is this?
 
-### For Learners
-- **Career Planning** - Explore 25+ career paths
-- **Skill Development** - Master 21 production-grade skills
-- **Project-Based Learning** - 100+ hands-on projects
-- **Progress Tracking** - Automated learning analytics
-- **Certifications** - Earn digital certificates
+> **Aws Assistant** is a Claude Code plugin with **8 agents** and **12 skills** for aws development.
 
-### For Educators
-- **Curriculum Design** - 81 researched roadmaps
-- **Assessment** - Adaptive skill assessments
-- **Student Tracking** - Learning analytics dashboard
-- **Project Assignments** - 100+ project templates
-- **Content Delivery** - Integrated learning materials
+</div>
 
-### For Enterprises
-- **Employee Training** - Structured upskilling programs
-- **Skill Gap Analysis** - Employee assessment tools
-- **Career Paths** - Internal mobility framework
-- **Knowledge Base** - Centralized learning platform
-- **Team Development** - Cohort-based learning
+---
+
+## 📑 Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Installation
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
 
 ```bash
-# Option A: Use Claude Code plugin manager
-claude-code plugin add custom-plugin-aws
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-aws
 
-# Option B: Load from local directory
-claude-code plugin add ./custom-plugin-aws
+# Step 2️⃣ Install the plugin
+/plugin install aws-development-assistant@pluginagentmarketplace-aws
 
-# Option C: Load in Claude Code directly
-# In Claude Code: /plugin-load ./custom-plugin-aws
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
 ```
 
-### 2. Start Learning
+</details>
 
-```
-/learn
-→ Select career goal (Frontend, Backend, etc.)
-→ Choose experience level (Beginner, Intermediate, Advanced)
-→ Get personalized learning plan
-→ Start with first recommended skill
-```
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
 
-### 3. Explore Resources
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-aws.git
+cd custom-plugin-aws
 
-```
-/browse
-→ View all 81 roadmaps
-→ Filter by agent, category, or technology
-→ Check prerequisites and related paths
-→ Read detailed learning objectives
+# Load locally
+/plugin load .
+
+# Restart Claude Code
 ```
 
-### 4. Test Knowledge
+</details>
+
+### ✅ Verify Installation
+
+After restart, you should see these agents:
 
 ```
-/assess --skill api-design
-→ Answer 20-40 adaptive questions
-→ Get detailed feedback
-→ See skill gap analysis
-→ Get improvement recommendations
-```
-
-### 5. Find Projects
-
-```
-/projects --skill react
-→ Browse 100+ project options
-→ Filter by difficulty and time
-→ Get step-by-step guidance
-→ Build portfolio
-
-```
-
-### 6. Compare Options
-
-```
-/compare --frameworks "React vs Vue"
-→ Feature comparison
-→ Job market analysis
-→ Learning curve assessment
-→ Community size
-→ Make informed decision
+aws-development-assistant:04-aws-networking
+aws-development-assistant:02-aws-iam
+aws-development-assistant:01-aws-fundamentals
+aws-development-assistant:08-aws-devops
+aws-development-assistant:03-aws-compute
+... and 3 more
 ```
 
 ---
 
-## 📊 Statistics
+## ✨ Features
 
-| Metric | Count | Status |
-|--------|-------|--------|
-| **Roadmaps** | 81 | ✅ Complete |
-| **Agents** | 7 | ✅ Complete |
-| **Skills** | 21 | ✅ Complete |
-| **Commands** | 5 | ✅ Complete |
-| **Projects** | 100+ | ✅ Complete |
-| **Automation Hooks** | 15+ | ✅ Complete |
-| **Learning Hours** | 1000+ | ✅ Available |
-| **Code Examples** | 500+ | ✅ Included |
+| Feature | Description |
+|---------|-------------|
+| 🤖 **8 Agents** | Specialized AI agents for aws tasks |
+| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
 
 ---
 
-## 🔑 Core Components
+## 🤖 Agents
 
-### 7 Specialized Agents
+### 8 Specialized Agents
 
-1. **Foundation & Core** (19 roadmaps) - Languages, algorithms, CS basics
-2. **Frontend & UI** (8 roadmaps) - Web frameworks, responsive design
-3. **Backend & API** (10 roadmaps) - Servers, databases, APIs
-4. **DevOps & Cloud** (11 roadmaps) - Infrastructure, deployment
-5. **Data & AI/ML** (9 roadmaps) - Analytics, ML, AI applications
-6. **Architecture & Design** (6 roadmaps) - System design, patterns
-7. **Specializations** (12 roadmaps) - Management, blockchain, security
-
-### 5 Interactive Commands
-
-- **/learn** - Personalized learning paths
-- **/browse** - Explore all resources
-- **/assess** - Knowledge assessment
-- **/compare** - Technology comparison
-- **/projects** - Project gallery
-
-### 21 Expert Skills
-
-Covers: Languages, Algorithms, Frontend/Backend Frameworks, Cloud, Data, ML, Architecture, Security, Databases, Management, and Specialized Domains
-
-### 15+ Automation Hooks
-
-- Learning progress tracking
-- Skill prerequisite validation
-- Agent workload balancing
-- Assessment generation
-- Project recommendations
-- Career guidance
-- Certification tracking
-- Community engagement
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **04-aws-networking** | Master AWS networking - VPC, subnets, Route 53, CloudFront,  |
+| 2 | **02-aws-iam** | Master AWS IAM - Identity and Access Management, policies, r |
+| 3 | **01-aws-fundamentals** | Master AWS fundamentals - cloud concepts, AWS Console, CLI s |
+| 4 | **08-aws-devops** | Master AWS DevOps - CloudWatch, CloudFormation, CDK, CodePip |
+| 5 | **03-aws-compute** | Master AWS compute services - EC2 instances, Auto Scaling, L |
+| 6 | **07-aws-serverless** | Master AWS serverless - Lambda, API Gateway, Step Functions, |
+| 7 | **05-aws-storage** | Master AWS storage services - S3, EBS, EFS, FSx, Storage Gat |
+| 8 | **06-aws-databases** | Master AWS database services - RDS, Aurora, DynamoDB, Elasti |
 
 ---
 
-## 🌟 Advanced Features
+## 🛠️ Skills
 
-### Adaptive Learning
+### Available Skills
 
-- Adjusts difficulty based on performance
-- Skips known content
-- Deep dives into challenging areas
-- Personalized recommendations
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `aws-dynamodb` | Master AWS DynamoDB - NoSQL tables, indexes, and data modeli | `Skill("aws-development-assistant:aws-dynamodb")` |
+| `aws-vpc` | Master AWS VPC - networking, subnets, route tables, and netw | `Skill("aws-development-assistant:aws-vpc")` |
+| `aws-rds` | Master AWS RDS - relational databases, Aurora, and managed d | `Skill("aws-development-assistant:aws-rds")` |
+| `aws-s3` | Master AWS S3 - buckets, objects, policies, and storage mana | `Skill("aws-development-assistant:aws-s3")` |
+| `aws-ec2` | Master AWS EC2 - instances, AMIs, security groups, and compu | `Skill("aws-development-assistant:aws-ec2")` |
+| `aws-iam` | Master AWS IAM - policies, roles, users, groups, and securit | `Skill("aws-development-assistant:aws-iam")` |
+| `aws-security` | Master AWS security - best practices, compliance, and securi | `Skill("aws-development-assistant:aws-security")` |
+| `aws-lambda` | Master AWS Lambda - serverless functions, triggers, and even | `Skill("aws-development-assistant:aws-lambda")` |
+| `aws-cloudwatch` | Master AWS CloudWatch - metrics, logs, alarms, and monitorin | `Skill("aws-development-assistant:aws-cloudwatch")` |
+| `aws-containers` | Master AWS containers - ECS, EKS, Fargate, and ECR | `Skill("aws-development-assistant:aws-containers")` |
+| ... | +2 more | See skills/ directory |
 
-### Progress Tracking
+---
 
-- Mark completed lessons
-- Track time invested
-- Identify knowledge gaps
-- Celebrate milestones
+## ⌨️ Commands
 
-### Comprehensive Assessment
-
-- 20-50 questions per skill
-- Multiple question types
-- Detailed feedback
-- Gap analysis and recommendations
-
-### Project Gallery
-
-- 100+ real-world projects
-- ⭐-⭐⭐⭐⭐ difficulty levels
-- Multiple skill applications
-- Portfolio-ready
-
-### Community Features
-
-- Share achievements
-- Find study groups
-- Discuss challenges
-- Peer learning
+| Command | Description |
+|---------|-------------|
+| `/aws-debug` | Debug AWS issues and troubleshoot common problems |
+| `/aws-costs` | Analyze AWS costs and get cost optimization recommendations |
+| `/aws-deploy` | Deploy applications to AWS using various services |
+| `/aws-check` | Check AWS CLI configuration and connectivity |
 
 ---
 
 ## 📚 Documentation
 
-- **README.md** - Overview (you are here)
-- **ARCHITECTURE.md** - System design & integration
-- **LEARNING-PATH.md** - Guided journeys by role
-- **INTEGRATION-GUIDE.md** - API & third-party integration
-- **CHANGELOG.md** - Version history
-
-Each agent, skill, and command has detailed inline documentation.
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
 
 ---
 
-## 🔐 Security & Privacy
+## 📁 Project Structure
 
-- ✅ No data collection without consent
-- ✅ Private learning progress (local storage)
-- ✅ Secure assessment data
-- ✅ No external tracking
-- ✅ GDPR compliant
-- ✅ Open source friendly
+<details>
+<summary>Click to expand</summary>
 
----
-
-## 🤝 Integration
-
-### With Claude Code
-
-- Native plugin architecture
-- Seamless agent routing
-- Skill loading and caching
-- Hook-based automation
-
-### With External Services
-
-- Link to official documentation
-- Integration with GitHub
-- LMS platform support
-- Certificate sharing
-
----
-
-## 🎓 Learning Outcomes
-
-After using this plugin, you can:
-
-✅ Master multiple programming languages
-✅ Build production-grade applications
-✅ Design scalable systems
-✅ Deploy and maintain infrastructure
-✅ Develop AI/ML applications
-✅ Lead technical teams
-✅ Specialize in niche domains
-✅ Earn industry certifications
-✅ Advance your career
-
----
-
-## 💡 Tips for Success
-
-1. **Start with Fundamentals** - Build strong foundation
-2. **Practice Consistently** - Regular practice beats cramming
-3. **Build Real Projects** - Apply what you learn
-4. **Join Communities** - Learn from others
-5. **Teach Others** - Teaching reinforces learning
-6. **Review Regularly** - Revisit challenging topics
-7. **Stay Curious** - Explore beyond requirements
-
----
-
-## 🐛 Feedback & Support
-
-- Report issues: Create detailed bug reports
-- Suggest features: Share ideas for improvements
-- Ask questions: Participate in discussions
-- Contribute: Submit improvements
-
----
-
-## 📄 License
-
-This plugin follows Claude Code guidelines and is available for:
-- ✅ Educational use
-- ✅ Individual learning
-- ✅ Team training
-- ✅ Enterprise implementation
-
----
-
-## 🙏 Acknowledgments
-
-Built on the foundation of [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) with additional production-grade enhancements, comprehensive skills, and automation features.
-
----
-
-## 📈 Roadmap
-
-### Planned Enhancements
-- [ ] Spaced repetition system
-- [ ] Video content integration
-- [ ] Live mentor matching
-- [ ] Job opportunity matching
-- [ ] Capstone project system
-- [ ] Multi-language support
-- [ ] Mobile app companion
-- [ ] Enterprise analytics
-
----
-
-## ⚡ Getting Started Now
-
-**Ready to transform your career?**
-
-Start with:
 ```
-/learn
+custom-plugin-aws/
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 8 agents
+├── 📁 skills/              # 12 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
 ```
 
-Choose your path and begin your learning journey! 🚀
+</details>
 
 ---
 
-**Version:** 1.0.0  
-**Last Updated:** January 2024  
-**Status:** ✅ Production Ready
+## 📅 Metadata
+
+| Field | Value |
+|-------|-------|
+| **Version** | 2.0.0 |
+| **Last Updated** | 2025-12-29 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 8 |
+| **Skills** | 12 |
+| **Commands** | 4 |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
+
+---
+
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
+
+---
+
+## 📝 License
+
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+
+Custom License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 👥 Contributors
+
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the Claude Code Community**
+
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+
+</div>
