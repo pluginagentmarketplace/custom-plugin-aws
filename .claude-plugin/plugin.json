@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "name": "aws-development-assistant",
+  "name": "aws-cloud-assistant",
   "version": "2.0.0",
-  "description": "Comprehensive AWS cloud development plugin with 8 specialized agents and 12 Golden Format skills for mastering Amazon Web Services",
+  "description": "Comprehensive AWS Cloud development plugin with specialized agents for EC2, S3, Lambda, and Golden Format skills",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
