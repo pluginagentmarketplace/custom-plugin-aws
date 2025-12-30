@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - npm ci
+
+  pre_build:
+    commands:
+      - echo "Running tests..."
+      - npm test
+
+  build:
+    commands:
+      - echo "Building application..."
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
+
+cache:
+  paths:
+    - node_modules/**/*

@@ -1,0 +1,20 @@
+# CloudWatch Alarm Configurations
+alarms:
+  cpu_high:
+    metric: CPUUtilization
+    threshold: 80
+    period: 300
+    evaluation_periods: 2
+    comparison: GreaterThanThreshold
+
+  memory_high:
+    metric: MemoryUtilization
+    threshold: 85
+    period: 300
+    evaluation_periods: 2
+
+  error_rate:
+    metric: 5XXError
+    threshold: 10
+    period: 60
+    statistic: Sum

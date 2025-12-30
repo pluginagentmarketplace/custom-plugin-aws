@@ -1,0 +1,18 @@
+# AWS Security Checklist
+identity:
+  - Enable MFA for root account
+  - Use IAM roles, not keys
+  - Implement least privilege
+  - Regular access reviews
+
+network:
+  - Use VPC flow logs
+  - Implement security groups properly
+  - Enable AWS Shield for DDoS
+  - Use WAF for web applications
+
+data:
+  - Enable encryption at rest
+  - Use KMS for key management
+  - Enable versioning for S3
+  - Regular backups

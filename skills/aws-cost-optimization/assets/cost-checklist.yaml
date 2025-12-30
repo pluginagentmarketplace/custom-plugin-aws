@@ -1,0 +1,23 @@
+# AWS Cost Optimization Checklist
+compute:
+  - Use Reserved Instances for predictable workloads
+  - Spot Instances for fault-tolerant workloads
+  - Right-size EC2 instances
+  - Use Savings Plans
+  - Enable auto-scaling
+
+storage:
+  - S3 lifecycle policies
+  - S3 Intelligent-Tiering
+  - Delete unused EBS volumes
+  - Use GP3 instead of GP2
+
+database:
+  - Reserved capacity for RDS
+  - Right-size database instances
+  - Use Aurora Serverless for variable workloads
+
+networking:
+  - Use VPC endpoints
+  - Optimize NAT Gateway usage
+  - Review data transfer costs

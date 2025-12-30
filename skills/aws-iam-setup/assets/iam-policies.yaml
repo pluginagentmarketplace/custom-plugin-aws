@@ -1,0 +1,14 @@
+# Common IAM Policies
+policies:
+  s3_read_only:
+    Effect: Allow
+    Action:
+      - s3:GetObject
+      - s3:ListBucket
+    Resource: "*"
+
+  ec2_admin:
+    Effect: Allow
+    Action:
+      - ec2:*
+    Resource: "*"

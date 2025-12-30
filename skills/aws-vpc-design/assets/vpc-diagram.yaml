@@ -1,0 +1,15 @@
+# VPC Architecture Reference
+vpc:
+  cidr: 10.0.0.0/16
+  subnets:
+    public:
+      - 10.0.1.0/24 (AZ-a)
+      - 10.0.2.0/24 (AZ-b)
+    private:
+      - 10.0.10.0/24 (AZ-a)
+      - 10.0.20.0/24 (AZ-b)
+  components:
+    - Internet Gateway
+    - NAT Gateway
+    - Route Tables
+    - Network ACLs

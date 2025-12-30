@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "name": "aws-cloud-assistant",
-  "version": "2.0.0",
-  "description": "AWS cloud platform plugin with specialized agents for compute, storage, networking, security, and serverless architecture",
+  "version": "2.1.0",
+  "description": "Comprehensive AWS cloud platform plugin with 8 specialized agents and 12 Golden Format skills for compute, storage, networking, security, serverless, and DevOps",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
@@ -21,7 +21,9 @@
     "infrastructure",
     "iam",
     "vpc",
-    "cloudformation"
+    "cloudformation",
+    "ecs",
+    "codepipeline"
   ],
   "agents": [
     "./agents/01-aws-fundamentals.md",
@@ -30,7 +32,8 @@
     "./agents/04-aws-networking.md",
     "./agents/05-aws-database.md",
     "./agents/06-aws-security.md",
-    "./agents/07-aws-serverless.md"
+    "./agents/07-aws-serverless.md",
+    "./agents/08-aws-devops.md"
   ],
   "skills": [
     "./skills/aws-iam-setup/SKILL.md",
@@ -39,7 +42,12 @@
     "./skills/aws-vpc-design/SKILL.md",
     "./skills/aws-rds-setup/SKILL.md",
     "./skills/aws-lambda-functions/SKILL.md",
-    "./skills/aws-security-best-practices/SKILL.md"
+    "./skills/aws-security-best-practices/SKILL.md",
+    "./skills/aws-cloudformation/SKILL.md",
+    "./skills/aws-codepipeline/SKILL.md",
+    "./skills/aws-cloudwatch/SKILL.md",
+    "./skills/aws-ecs/SKILL.md",
+    "./skills/aws-cost-optimization/SKILL.md"
   ],
   "commands": [
     "./commands/aws-check.md",

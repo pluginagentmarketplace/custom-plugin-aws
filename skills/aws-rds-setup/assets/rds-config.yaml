@@ -1,0 +1,7 @@
+# RDS Configuration Best Practices
+production:
+  instance_class: db.r5.large
+  multi_az: true
+  storage_encrypted: true
+  backup_retention: 7
+  maintenance_window: "Sun:03:00-Sun:04:00"
