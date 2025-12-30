@@ -1,437 +1,484 @@
-# 🎓 Developer Roadmap Plugin - Learning Paths
+# AWS Cloud Assistant - Learning Paths
 
-## Guided Learning Journeys for Every Career Goal
+## Guided AWS Learning Journeys
 
-This guide provides pre-designed learning paths for 25+ career roles. Start with your goal and follow the recommended sequence!
-
----
-
-## 🎯 Quick Path Selection
-
-### By Career Goal
-
-**Web Development**
-- Frontend Developer (Beginner → Advanced)
-- Backend Developer (Beginner → Advanced)
-- Full Stack Developer (12-18 months)
-
-**Cloud & Infrastructure**
-- DevOps Engineer (12-24 months)
-- Cloud Architect (18-24 months)
-- Site Reliability Engineer (SRE) (18-24 months)
-
-**Data & AI**
-- Data Engineer (12-18 months)
-- Machine Learning Engineer (18-24 months)
-- AI Engineer (18-24 months)
-- Data Scientist (12-18 months)
-- Analytics Engineer (12-18 months)
-
-**Specializations**
-- Mobile Developer (iOS/Android) (12-18 months)
-- Game Developer (18-24 months)
-- Blockchain Developer (12-18 months)
-- Security Engineer (18-24 months)
-
-**Leadership**
-- Engineering Manager (From IC + 6-12 months)
-- Product Manager (From IC + 6-12 months)
-- Technical Architect (From IC + 12-18 months)
+This guide provides 6 pre-designed learning paths for mastering AWS cloud services, from fundamentals to solutions architecture.
 
 ---
 
-## 📘 Detailed Learning Paths
+## Quick Path Selection
 
-### Path 1: Frontend Developer (Beginner)
-
-**Duration:** 6 months (600+ hours)  
-**Goal:** Build responsive, interactive web interfaces  
-**Job Market:** Very High Demand
-
-#### Phase 1: Foundations (6 weeks)
-**Agents:** Foundation & Core + Frontend & UI
-
-1. **HTML & CSS Fundamentals** (2 weeks)
-   - Skill: responsive-design
-   - Topics: semantic HTML, CSS fundamentals, Flexbox, Grid
-   - Projects: Portfolio website, landing page
-   - Time: 40 hours
-
-2. **JavaScript Essentials** (3 weeks)
-   - Skill: language-fundamentals
-   - Topics: ES6+, DOM manipulation, async, callbacks
-   - Projects: Todo list, calculator, weather app
-   - Time: 60 hours
-
-3. **Git & Version Control** (1 week)
-   - Topics: Git basics, GitHub, collaboration
-   - Projects: Push projects to GitHub
-   - Time: 20 hours
-
-#### Phase 2: React Mastery (8 weeks)
-**Agent:** Frontend & UI
-
-1. **React Fundamentals** (3 weeks)
-   - Skill: frontend-frameworks
-   - Topics: Components, JSX, props, state
-   - Projects: Component library
-   - Time: 60 hours
-
-2. **Advanced React** (3 weeks)
-   - Skill: frontend-frameworks
-   - Topics: Hooks, context, performance, testing
-   - Projects: Real application with state
-   - Time: 60 hours
-
-3. **Styling & Design** (2 weeks)
-   - Skill: responsive-design
-   - Topics: Tailwind CSS, CSS-in-JS, design systems
-   - Projects: Styled component library
-   - Time: 40 hours
-
-#### Phase 3: Build & Deploy (4 weeks)
-**Agents:** Frontend & UI + DevOps & Cloud
-
-1. **Build Tools** (1 week)
-   - Topics: Webpack, Vite, npm, package management
-   - Time: 20 hours
-
-2. **Deployment** (2 weeks)
-   - Skill: devops-practices
-   - Topics: Vercel, Netlify, GitHub Pages, CI/CD basics
-   - Projects: Deploy 3 projects
-   - Time: 40 hours
-
-3. **Performance & Accessibility** (1 week)
-   - Skill: responsive-design
-   - Topics: Lighthouse, WCAG, Web Vitals
-   - Time: 20 hours
-
-#### Phase 4: Interview Preparation (4 weeks)
-**Agents:** Foundation & Core + Frontend & UI
-
-1. **Algorithm Problems** (2 weeks)
-   - Skill: algorithms-datastructures
-   - Projects: 20+ LeetCode problems
-   - Time: 40 hours
-
-2. **System Design** (1 week)
-   - Skill: system-design
-   - Topics: Frontend architecture, scaling
-   - Time: 20 hours
-
-3. **Mock Interviews** (1 week)
-   - Projects: Practice interviews, whiteboarding
-   - Time: 20 hours
-
-#### Success Metrics
-- ✅ Build 5+ portfolio projects
-- ✅ Score 80%+ on frontend assessments
-- ✅ Deploy 3 projects to production
-- ✅ Solve 30+ algorithm problems
-- ✅ Pass mock interviews
+| Path | Duration | Level | Goal |
+|------|----------|-------|------|
+| [AWS Fundamentals](#path-1-aws-fundamentals) | 40 hrs | Beginner | Master AWS basics |
+| [Compute Specialist](#path-2-compute-specialist) | 120 hrs | Intermediate | EC2 & container expertise |
+| [Serverless Developer](#path-3-serverless-developer) | 100 hrs | Intermediate | Build serverless apps |
+| [DevOps Engineer](#path-4-devops-engineer) | 180 hrs | Advanced | CI/CD & IaC mastery |
+| [Security Specialist](#path-5-security-specialist) | 140 hrs | Advanced | Enterprise security |
+| [Solutions Architect](#path-6-solutions-architect) | 400 hrs | Expert | Full AWS architecture |
 
 ---
 
-### Path 2: Backend Developer (Intermediate)
+## Path 1: AWS Fundamentals
 
-**Duration:** 12 months (1200+ hours)  
-**Prerequisite:** Basic programming knowledge  
-**Goal:** Build scalable server applications  
+**Duration:** 40 hours
+**Level:** Beginner
+**Agents:** 01-aws-fundamentals
+**Skills:** aws-iam-setup, aws-cost-optimization
 
-#### Phase 1: Core Concepts (8 weeks)
-**Agents:** Foundation & Core + Backend & API
+### Learning Objectives
 
-1. **Data Structures & Algorithms** (4 weeks)
-   - Skill: algorithms-datastructures
-   - Topics: Arrays, trees, graphs, complexity
-   - Projects: Implement structures, 30+ problems
-   - Time: 80 hours
+- Understand AWS global infrastructure
+- Configure IAM users, roles, and policies
+- Navigate AWS Console and CLI
+- Analyze and optimize costs
 
-2. **Database Fundamentals** (3 weeks)
-   - Skill: database-design
-   - Topics: SQL, normalization, transactions
-   - Projects: Design 3+ schemas
-   - Time: 60 hours
+### Phase 1: AWS Basics (10 hours)
 
-3. **HTTP & API Basics** (1 week)
-   - Skill: api-design
-   - Topics: HTTP methods, status codes, REST intro
-   - Time: 20 hours
+| Topic | Hours | Resources |
+|-------|-------|-----------|
+| AWS Global Infrastructure | 2 | Regions, AZs, Edge Locations |
+| AWS Console Navigation | 2 | Services, dashboards |
+| AWS CLI Setup | 3 | Installation, configuration |
+| Account Best Practices | 3 | MFA, root account, Organizations |
 
-#### Phase 2: Framework & Backend (12 weeks)
-**Agent:** Backend & API
+### Phase 2: Identity & Access Management (15 hours)
 
-Choose one track (or learn multiple!):
+**Skill:** aws-iam-setup
 
-**Node.js Track:**
-1. **Express.js Basics** (3 weeks)
-   - Topics: Routing, middleware, request handling
-   - Projects: Todo API, blog API
-   - Time: 60 hours
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| IAM Users & Groups | 3 | Create users, assign groups |
+| IAM Policies | 5 | JSON policies, permissions |
+| IAM Roles | 4 | Service roles, cross-account |
+| Identity Federation | 3 | SSO, SAML, OIDC |
 
-2. **Advanced Express** (3 weeks)
-   - Topics: Authentication, validation, error handling
-   - Projects: User authentication system
-   - Time: 60 hours
+### Phase 3: Billing & Cost Management (15 hours)
 
-**Django Track (alternative):**
-1. **Django Fundamentals** (3 weeks)
-   - Topics: Models, views, URLs, ORM
-   - Projects: Blog application
-   - Time: 60 hours
+**Skill:** aws-cost-optimization
 
-2. **Advanced Django** (3 weeks)
-   - Topics: Authentication, permissions, signals
-   - Projects: Full-featured application
-   - Time: 60 hours
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| AWS Pricing Models | 3 | On-demand, Reserved, Spot |
+| Cost Explorer | 4 | Analysis, reports |
+| Budgets & Alerts | 4 | Budget creation, notifications |
+| Cost Optimization | 4 | Rightsizing, Savings Plans |
 
-#### Phase 3: API & Database (8 weeks)
-**Agent:** Backend & API
+### Success Metrics
 
-1. **RESTful API Design** (3 weeks)
-   - Skill: api-design
-   - Topics: Resources, versioning, documentation
-   - Projects: Complete REST API (20+ endpoints)
-   - Time: 60 hours
-
-2. **Database Optimization** (3 weeks)
-   - Skill: database-design
-   - Topics: Indexing, queries, transactions, replication
-   - Projects: Optimize slow queries
-   - Time: 60 hours
-
-3. **Authentication & Security** (2 weeks)
-   - Skill: security-best-practices
-   - Topics: JWT, OAuth, password hashing, CORS
-   - Projects: Secure authentication system
-   - Time: 40 hours
-
-#### Phase 4: DevOps & Deployment (8 weeks)
-**Agent:** DevOps & Cloud
-
-1. **Docker & Containers** (3 weeks)
-   - Skill: containerization
-   - Topics: Dockerfile, Docker Compose, optimization
-   - Projects: Containerize applications
-   - Time: 60 hours
-
-2. **CI/CD & Monitoring** (3 weeks)
-   - Skill: devops-practices
-   - Topics: GitHub Actions, monitoring, logging
-   - Projects: Setup CI/CD pipeline
-   - Time: 60 hours
-
-3. **Cloud Deployment** (2 weeks)
-   - Skill: cloud-platforms
-   - Topics: AWS (EC2, RDS, S3), deployment
-   - Projects: Deploy 2 apps to AWS
-   - Time: 40 hours
-
-#### Phase 5: Interview Preparation (6 weeks)
-**Agents:** Foundation & Core + Backend & API
-
-1. **System Design** (3 weeks)
-   - Skill: system-design
-   - Topics: Scalability, database design, caching
-   - Projects: Design YouTube, Uber backend
-   - Time: 60 hours
-
-2. **Algorithm Mastery** (2 weeks)
-   - Skill: algorithms-datastructures
-   - Projects: 50+ problems, all difficulty levels
-   - Time: 40 hours
-
-3. **Behavioral & Mock Interviews** (1 week)
-   - Projects: 10+ mock interviews
-   - Time: 20 hours
-
-#### Success Metrics
-- ✅ Build 4+ full-stack APIs
-- ✅ Master database design
-- ✅ Deploy to cloud (AWS/GCP/Azure)
-- ✅ Score 85%+ on backend assessments
-- ✅ Solve 50+ algorithm problems
-- ✅ Design 2+ systems at scale
+- [ ] Create IAM users with least privilege
+- [ ] Write custom IAM policies
+- [ ] Set up cost budgets and alerts
+- [ ] Identify cost optimization opportunities
 
 ---
 
-### Path 3: Full Stack Developer (12 months)
+## Path 2: Compute Specialist
 
-**Duration:** 12-14 months (1400+ hours)  
-**Goal:** Build complete applications (frontend + backend + devops)
+**Duration:** 120 hours
+**Level:** Intermediate
+**Agents:** 01-aws-fundamentals, 02-aws-compute, 04-aws-networking
+**Skills:** aws-iam-setup, aws-vpc-design, aws-ec2-deployment, aws-ecs
 
-#### Phase 1: Foundations (8 weeks)
-Combination of Frontend + Backend fundamentals
-- HTML/CSS/JavaScript
-- Backend language choice
-- Databases
-- Git/GitHub
+### Learning Objectives
 
-#### Phase 2: Frontend Track (8 weeks)
-- React/Vue/Angular mastery
-- State management
-- Testing
-- Deployment
+- Design and deploy VPC architectures
+- Launch and manage EC2 instances
+- Configure Auto Scaling
+- Deploy containerized applications on ECS/Fargate
 
-#### Phase 3: Backend Track (8 weeks)
-- API development
-- Database design
-- Authentication
-- Scaling patterns
+### Phase 1: Prerequisites (20 hours)
 
-#### Phase 4: Full Stack Integration (6 weeks)
-- Combined frontend + backend projects
-- End-to-end testing
-- Performance optimization
-- DevOps basics
+Complete AWS Fundamentals path or equivalent knowledge.
 
-#### Phase 5: DevOps & Deployment (4 weeks)
-- Docker, Kubernetes basics
-- CI/CD pipelines
-- Cloud deployment
-- Monitoring
+### Phase 2: Networking Foundation (25 hours)
 
-#### Phase 6: Capstone Project (6 weeks)
-- Build complete application:
-  - Scalable frontend
-  - Robust backend
-  - Database design
-  - Deployment
-  - Performance optimization
+**Skill:** aws-vpc-design
 
-#### Success Metrics
-- ✅ Build 2+ full-stack applications
-- ✅ Master frontend + backend patterns
-- ✅ Deploy to production
-- ✅ Score 80%+ across all areas
-- ✅ Portfolio-ready projects
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| VPC Fundamentals | 5 | CIDR, subnets, routing |
+| Security Groups & NACLs | 5 | Inbound/outbound rules |
+| NAT Gateways | 3 | Private subnet internet access |
+| VPC Peering | 4 | Cross-VPC connectivity |
+| VPC Endpoints | 4 | Private AWS service access |
+| Transit Gateway | 4 | Hub-spoke architecture |
 
----
+### Phase 3: EC2 Mastery (40 hours)
 
-### Path 4: DevOps Engineer (18 months)
+**Skill:** aws-ec2-deployment
 
-**Duration:** 18-24 months (1800+ hours)  
-**Prerequisite:** Backend development experience  
-**Goal:** Manage infrastructure, deployments, operations
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| EC2 Instance Types | 5 | Choosing right instance |
+| AMIs & Launch Templates | 5 | Custom images |
+| EBS Volumes | 5 | Storage optimization |
+| Auto Scaling | 10 | Policies, scaling patterns |
+| Load Balancers | 10 | ALB, NLB, target groups |
+| Spot Instances | 5 | Cost optimization |
 
-#### Phase 1: Linux & Fundamentals (6 weeks)
-**Agent:** Foundation & Core
-- Linux command line
-- Bash scripting
-- System administration
-- Networking basics
+### Phase 4: Container Orchestration (35 hours)
 
-#### Phase 2: Version Control & CI/CD (6 weeks)
-**Agent:** DevOps & Cloud
-- Git advanced
-- GitHub Actions / GitLab CI
-- Automated testing
-- Automated deployments
+**Skill:** aws-ecs
 
-#### Phase 3: Containerization (8 weeks)
-**Agent:** DevOps & Cloud
-- Docker fundamentals
-- Docker Compose
-- Image optimization
-- Container networking
-- Projects: Containerize 5+ applications
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| Docker Fundamentals | 5 | Containers, images |
+| ECR | 5 | Container registry |
+| ECS Cluster Setup | 8 | EC2 vs Fargate |
+| Task Definitions | 7 | Container configuration |
+| Service Deployment | 5 | Rolling, blue/green |
+| EKS Overview | 5 | Kubernetes on AWS |
 
-#### Phase 4: Kubernetes (10 weeks)
-**Agent:** DevOps & Cloud
-- Kubernetes concepts
-- Deployments, services
-- StatefulSets, DaemonSets
-- Helm charts
-- Projects: Deploy to K8s cluster
+### Success Metrics
 
-#### Phase 5: Cloud Platforms (12 weeks)
-Choose primary (AWS, GCP, or Azure):
-
-**AWS Focus:**
-- EC2, RDS, S3
-- Lambda, VPC
-- CloudFormation, Systems Manager
-- Projects: Deploy 3+ applications
-
-#### Phase 6: Infrastructure as Code (8 weeks)
-**Agent:** DevOps & Cloud
-- Terraform
-- CloudFormation / Ansible
-- Module design
-- State management
-- Projects: IaC for complete stack
-
-#### Phase 7: Monitoring & Operations (8 weeks)
-**Agent:** DevOps & Cloud
-- Prometheus, Grafana
-- CloudWatch / DataDog
-- Log aggregation (ELK)
-- Alerting
-- Projects: Complete monitoring setup
-
-#### Phase 8: Advanced Topics (6 weeks)
-- Service mesh (Istio, Linkerd)
-- GitOps (ArgoCD)
-- Scaling strategies
-- Disaster recovery
-
-#### Success Metrics
-- ✅ Deploy app on AWS/GCP/Azure
-- ✅ Setup Kubernetes cluster
-- ✅ Create Terraform modules
-- ✅ Implement monitoring
-- ✅ Design disaster recovery
+- [ ] Design multi-tier VPC architecture
+- [ ] Deploy Auto Scaling EC2 fleet
+- [ ] Configure ALB with path-based routing
+- [ ] Deploy containerized app on ECS Fargate
 
 ---
 
-## 🎓 Assessment Checkpoints
+## Path 3: Serverless Developer
 
-Each phase includes:
-- ✅ Knowledge assessments
-- ✅ Hands-on projects
-- ✅ Practical exercises
-- ✅ Progress tracking
-- ✅ Feedback and recommendations
+**Duration:** 100 hours
+**Level:** Intermediate
+**Agents:** 01-aws-fundamentals, 07-aws-serverless, 05-aws-database
+**Skills:** aws-iam-setup, aws-lambda-functions, aws-rds-setup
+
+### Learning Objectives
+
+- Build event-driven serverless applications
+- Design API Gateway endpoints
+- Implement Step Functions workflows
+- Connect to managed databases
+
+### Phase 1: Prerequisites (15 hours)
+
+Complete AWS Fundamentals path or equivalent.
+
+### Phase 2: Lambda Mastery (35 hours)
+
+**Skill:** aws-lambda-functions
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| Lambda Fundamentals | 5 | Runtime, handlers |
+| Packaging & Deployment | 5 | ZIP, Layers, SAM |
+| Triggers & Events | 8 | S3, API GW, EventBridge |
+| Environment & Config | 5 | Variables, secrets |
+| Performance Tuning | 7 | Memory, cold starts |
+| Error Handling | 5 | DLQ, retry strategies |
+
+### Phase 3: API Gateway (20 hours)
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| REST APIs | 6 | Resources, methods |
+| HTTP APIs | 4 | Simplified design |
+| Authorization | 5 | Cognito, Lambda authorizers |
+| Throttling & Caching | 5 | Rate limits, cache |
+
+### Phase 4: Step Functions (15 hours)
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| State Machine Basics | 5 | States, transitions |
+| Error Handling | 5 | Catch, retry |
+| Parallel Execution | 5 | Map, parallel states |
+
+### Phase 5: Database Integration (15 hours)
+
+**Skill:** aws-rds-setup
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| RDS Basics | 5 | Instance setup |
+| DynamoDB | 5 | NoSQL patterns |
+| Aurora Serverless | 5 | Scaling, Data API |
+
+### Success Metrics
+
+- [ ] Build REST API with Lambda backend
+- [ ] Implement multi-step workflow
+- [ ] Connect Lambda to RDS/DynamoDB
+- [ ] Deploy using SAM/CloudFormation
 
 ---
 
-## 🚀 Quick Start
+## Path 4: DevOps Engineer
 
-1. **Choose Your Path:** Select from 25+ learning paths
-2. **Start with Phase 1:** Begin with foundations
-3. **Complete Projects:** Build real applications
-4. **Take Assessments:** Test your knowledge
-5. **Move to Phase 2:** Progress to advanced topics
-6. **Build Capstone:** Final comprehensive project
-7. **Interview Prep:** Master interviews
-8. **Get Job:** Launch your career!
+**Duration:** 180 hours
+**Level:** Advanced
+**Agents:** 01-aws-fundamentals, 02-aws-compute, 08-aws-devops
+**Skills:** aws-iam-setup, aws-vpc-design, aws-ec2-deployment, aws-ecs, aws-cloudformation, aws-codepipeline, aws-cloudwatch
+
+### Learning Objectives
+
+- Implement Infrastructure as Code
+- Build CI/CD pipelines
+- Configure monitoring and alerting
+- Manage container platforms
+
+### Phase 1: Prerequisites (30 hours)
+
+Complete Compute Specialist path or equivalent.
+
+### Phase 2: Infrastructure as Code (45 hours)
+
+**Skill:** aws-cloudformation
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| CloudFormation Basics | 8 | Templates, stacks |
+| Intrinsic Functions | 7 | Ref, GetAtt, Sub |
+| Nested Stacks | 5 | Modular design |
+| Change Sets | 5 | Safe updates |
+| AWS CDK | 10 | TypeScript/Python IaC |
+| Terraform Basics | 10 | Multi-cloud IaC |
+
+### Phase 3: CI/CD Pipelines (40 hours)
+
+**Skill:** aws-codepipeline
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| CodeCommit | 5 | Git repository |
+| CodeBuild | 10 | Build projects, buildspec |
+| CodeDeploy | 10 | Deployment strategies |
+| CodePipeline | 10 | Pipeline orchestration |
+| GitHub Actions | 5 | Alternative CI/CD |
+
+### Phase 4: Monitoring & Observability (35 hours)
+
+**Skill:** aws-cloudwatch
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| CloudWatch Metrics | 8 | Custom metrics, dashboards |
+| CloudWatch Logs | 8 | Log groups, insights |
+| CloudWatch Alarms | 7 | Alerts, notifications |
+| X-Ray | 7 | Distributed tracing |
+| EventBridge | 5 | Event-driven automation |
+
+### Phase 5: Container Platforms (30 hours)
+
+**Skill:** aws-ecs
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| ECS with CI/CD | 10 | Pipeline integration |
+| EKS Basics | 10 | Kubernetes on AWS |
+| Service Discovery | 5 | Cloud Map |
+| App Mesh | 5 | Service mesh |
+
+### Success Metrics
+
+- [ ] Deploy 3-tier app with CloudFormation
+- [ ] Build complete CI/CD pipeline
+- [ ] Create monitoring dashboard with alarms
+- [ ] Implement blue/green deployment
 
 ---
 
-## 📊 Timeline Comparison
+## Path 5: Security Specialist
 
-| Path | Duration | Difficulty | Job Market | Learning Hours |
-|------|----------|-----------|-----------|---|
-| Frontend | 6-9 months | Medium | Very High | 600-800 |
-| Backend | 9-12 months | Hard | Very High | 900-1200 |
-| Full Stack | 12-14 months | Hard | Very High | 1200-1400 |
-| DevOps | 18-24 months | Hard | High | 1800-2000 |
-| Data Engineer | 12-18 months | Hard | Very High | 1200-1800 |
-| AI Engineer | 18-24 months | Very Hard | Growing | 1800-2400 |
+**Duration:** 140 hours
+**Level:** Advanced
+**Agents:** 01-aws-fundamentals, 04-aws-networking, 06-aws-security
+**Skills:** aws-iam-setup, aws-vpc-design, aws-security-best-practices
+
+### Learning Objectives
+
+- Implement defense in depth
+- Configure encryption and key management
+- Design network security controls
+- Achieve compliance frameworks
+
+### Phase 1: Prerequisites (20 hours)
+
+Complete AWS Fundamentals path or equivalent.
+
+### Phase 2: Identity Security (30 hours)
+
+**Skill:** aws-iam-setup
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| Advanced IAM Policies | 8 | Conditions, boundaries |
+| AWS Organizations | 7 | SCPs, multi-account |
+| AWS SSO | 5 | Identity Center |
+| Secrets Management | 5 | Secrets Manager, Parameter Store |
+| Certificate Management | 5 | ACM |
+
+### Phase 3: Network Security (35 hours)
+
+**Skill:** aws-vpc-design
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| Security Groups | 5 | Least privilege |
+| NACLs | 5 | Stateless filtering |
+| WAF | 10 | Web application firewall |
+| Shield | 5 | DDoS protection |
+| Network Firewall | 10 | Deep inspection |
+
+### Phase 4: Data Protection (30 hours)
+
+**Skill:** aws-security-best-practices
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| KMS | 10 | Key management |
+| CloudHSM | 5 | Hardware security modules |
+| S3 Encryption | 5 | Server-side, client-side |
+| RDS Encryption | 5 | At-rest, in-transit |
+| Macie | 5 | Data discovery |
+
+### Phase 5: Detection & Response (25 hours)
+
+| Topic | Hours | Hands-on |
+|-------|-------|----------|
+| GuardDuty | 7 | Threat detection |
+| Security Hub | 8 | Centralized security |
+| Inspector | 5 | Vulnerability scanning |
+| Incident Response | 5 | Runbooks, automation |
+
+### Success Metrics
+
+- [ ] Design multi-account security architecture
+- [ ] Implement WAF rules for OWASP Top 10
+- [ ] Configure encryption with KMS CMKs
+- [ ] Set up Security Hub with compliance
 
 ---
 
-## 💡 Tips for Success
+## Path 6: Solutions Architect
 
-1. **Follow the sequence** - Foundations matter!
-2. **Build projects** - Apply what you learn
-3. **Practice consistently** - Regular practice beats cramming
-4. **Review assessments** - Learn from mistakes
-5. **Join communities** - Learn from peers
-6. **Share knowledge** - Teach others
-7. **Stay motivated** - Track your progress
+**Duration:** 400 hours
+**Level:** Expert
+**Agents:** All 8 agents
+**Skills:** All 12 skills
+
+### Learning Objectives
+
+- Design highly available architectures
+- Implement disaster recovery
+- Optimize cost and performance
+- Architect for compliance
+
+### Phase 1: Foundation (40 hours)
+
+Complete AWS Fundamentals path.
+
+### Phase 2: Compute & Networking (80 hours)
+
+Complete Compute Specialist path.
+
+### Phase 3: Serverless & Database (60 hours)
+
+| Topic | Hours | Skills |
+|-------|-------|--------|
+| Serverless Patterns | 30 | aws-lambda-functions |
+| Database Selection | 15 | aws-rds-setup |
+| Data Architecture | 15 | Multi-DB strategies |
+
+### Phase 4: Security & Compliance (60 hours)
+
+Complete Security Specialist path core modules.
+
+### Phase 5: DevOps & Automation (80 hours)
+
+Complete DevOps Engineer path core modules.
+
+### Phase 6: Advanced Architecture (80 hours)
+
+| Topic | Hours | Focus |
+|-------|-------|-------|
+| High Availability | 20 | Multi-AZ, multi-region |
+| Disaster Recovery | 20 | RTO/RPO strategies |
+| Cost Optimization | 20 | FinOps practices |
+| Performance | 20 | Latency, throughput |
+
+### Success Metrics
+
+- [ ] Design multi-region active-active
+- [ ] Implement DR with RPO < 1 hour
+- [ ] Achieve 99.99% availability
+- [ ] Optimize costs by 30%+
+- [ ] Pass AWS Solutions Architect exam
 
 ---
 
-**Ready to start?** Use `/learn` to get your personalized learning path! 🚀
+## Skill Dependencies
+
+```
+aws-iam-setup (Foundation - Start Here)
+    │
+    ├── aws-vpc-design
+    │   ├── aws-ec2-deployment
+    │   │   ├── aws-rds-setup (needs VPC + EC2)
+    │   │   └── aws-ecs (needs VPC + EC2)
+    │   └── (direct VPC skills)
+    │
+    ├── aws-s3-management
+    │
+    ├── aws-lambda-functions
+    │
+    ├── aws-security-best-practices
+    │
+    ├── aws-cloudwatch
+    │
+    ├── aws-cloudformation
+    │   └── aws-codepipeline (needs CFN)
+    │
+    └── aws-cost-optimization
+```
+
+---
+
+## Assessment Checkpoints
+
+Each path includes:
+
+| Checkpoint | Type | Passing Score |
+|------------|------|---------------|
+| Knowledge Quiz | Multiple choice | 80% |
+| Hands-on Lab | Practical | Complete all tasks |
+| Architecture Review | Design | Meets requirements |
+| Cost Analysis | FinOps | Optimized design |
+
+---
+
+## Certification Alignment
+
+| Path | AWS Certification |
+|------|-------------------|
+| AWS Fundamentals | Cloud Practitioner |
+| Compute Specialist | SysOps Administrator |
+| Serverless Developer | Developer Associate |
+| DevOps Engineer | DevOps Engineer Professional |
+| Security Specialist | Security Specialty |
+| Solutions Architect | Solutions Architect Professional |
+
+---
+
+## Tips for Success
+
+1. **Follow prerequisites** - Each path builds on previous knowledge
+2. **Hands-on practice** - Theory alone isn't enough
+3. **Use AWS Free Tier** - Practice without cost
+4. **Clean up resources** - Avoid surprise bills
+5. **Join communities** - Learn from others
+6. **Build projects** - Apply knowledge practically
+7. **Review regularly** - Spaced repetition works
+
+---
+
+**Ready to start?** Choose your path and begin your AWS journey!
+
+---
+
+**Learning Paths Version:** 3.0.0
+**Last Updated:** 2025-12-30
+**Status:** Production Ready
