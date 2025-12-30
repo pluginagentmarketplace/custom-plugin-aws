@@ -1,0 +1,41 @@
+# aws-rds-setup Configuration
+# Category: cloud
+# Generated: 2025-12-30
+
+skill:
+  name: aws-rds-setup
+  version: "1.0.0"
+  category: cloud
+
+settings:
+  # Default settings for aws-rds-setup
+  enabled: true
+  log_level: info
+
+  # Category-specific defaults
+  validation:
+    strict_mode: false
+    auto_fix: false
+
+  output:
+    format: markdown
+    include_examples: true
+
+# Environment-specific overrides
+environments:
+  development:
+    log_level: debug
+    validation:
+      strict_mode: false
+
+  production:
+    log_level: warn
+    validation:
+      strict_mode: true
+
+# Integration settings
+integrations:
+  # Enable/disable integrations
+  git: true
+  linter: true
+  formatter: true
