@@ -1,450 +1,435 @@
 {
-  "version": "1.0.0",
+  "version": "1.3.0",
+  "sasmp_version": "1.3.0",
   "registry": {
     "agents": [
       {
-        "id": "foundation-core",
-        "name": "Foundation & Core Technologies",
-        "description": "Programming languages, algorithms, data structures, and computer science fundamentals",
-        "level": "beginner-to-advanced",
-        "roadmaps_count": 19,
+        "id": "01-aws-fundamentals",
+        "name": "AWS Fundamentals Agent",
+        "description": "Foundation architect for AWS account setup, IAM, billing, and multi-region strategies",
+        "level": "beginner-to-intermediate",
         "skills": [
-          "language-fundamentals",
-          "algorithms-datastructures",
-          "computer-science"
+          "aws-iam-setup",
+          "aws-cost-optimization"
         ],
-        "roadmaps": [
-          "javascript",
-          "typescript",
-          "python",
-          "java",
-          "rust",
-          "golang",
-          "cpp",
-          "php",
-          "kotlin",
-          "swift-ui",
-          "html",
-          "css",
-          "shell-bash",
-          "sql",
-          "datastructures-and-algorithms",
-          "computer-science",
-          "code-review",
-          "prompt-engineering"
+        "primary_skills": ["aws-iam-setup"],
+        "secondary_skills": ["aws-cost-optimization"],
+        "capabilities": [
+          "account-setup",
+          "iam-management",
+          "billing-analysis",
+          "organization-design"
         ],
-        "projects": 15,
-        "estimated_hours": 300,
+        "estimated_hours": 40,
         "prerequisites": []
       },
       {
-        "id": "frontend-ui",
-        "name": "Frontend & UI Development",
-        "description": "Web frameworks, responsive design, UX principles, and modern frontend development",
-        "level": "beginner-to-advanced",
-        "roadmaps_count": 8,
+        "id": "02-aws-compute",
+        "name": "AWS Compute Agent",
+        "description": "Compute architect for EC2, Auto Scaling, ECS, EKS, and container orchestration",
+        "level": "intermediate-to-advanced",
         "skills": [
-          "frontend-frameworks",
-          "responsive-design"
+          "aws-ec2-deployment",
+          "aws-ecs"
         ],
-        "roadmaps": [
-          "frontend",
-          "frontend-beginner",
-          "ux-design",
-          "react",
-          "vue",
-          "angular",
-          "nextjs",
-          "react-native",
-          "flutter",
-          "design-system"
+        "primary_skills": ["aws-ec2-deployment"],
+        "secondary_skills": ["aws-ecs"],
+        "capabilities": [
+          "ec2-deployment",
+          "auto-scaling",
+          "container-orchestration",
+          "instance-optimization"
         ],
-        "projects": 20,
-        "estimated_hours": 400,
-        "prerequisites": [
-          "language-fundamentals",
-          "computer-science"
-        ]
+        "estimated_hours": 60,
+        "prerequisites": ["01-aws-fundamentals"]
       },
       {
-        "id": "backend-api",
-        "name": "Backend & API Development",
-        "description": "Backend frameworks, API design, database integration, and server-side architecture",
-        "level": "intermediate-to-advanced",
-        "roadmaps_count": 10,
+        "id": "03-aws-storage",
+        "name": "AWS Storage Agent",
+        "description": "Storage architect for S3, EBS, EFS, Glacier, and data lifecycle management",
+        "level": "intermediate",
         "skills": [
-          "backend-frameworks",
-          "api-design",
-          "database-design"
+          "aws-s3-management"
         ],
-        "roadmaps": [
-          "backend",
-          "backend-beginner",
-          "full-stack",
-          "nodejs",
-          "spring-boot",
-          "aspnet-core",
-          "laravel",
-          "api-design",
-          "graphql",
-          "best-practices/api-security",
-          "best-practices/backend-performance"
+        "primary_skills": ["aws-s3-management"],
+        "secondary_skills": [],
+        "capabilities": [
+          "s3-management",
+          "ebs-optimization",
+          "data-lifecycle",
+          "backup-strategy"
         ],
-        "projects": 18,
-        "estimated_hours": 450,
-        "prerequisites": [
-          "language-fundamentals",
-          "algorithms-datastructures"
-        ]
+        "estimated_hours": 40,
+        "prerequisites": ["01-aws-fundamentals"]
       },
       {
-        "id": "devops-cloud",
-        "name": "DevOps & Cloud Infrastructure",
-        "description": "Cloud platforms, containerization, orchestration, and infrastructure automation",
+        "id": "04-aws-networking",
+        "name": "AWS Networking Agent",
+        "description": "Network architect for VPC, Route53, CloudFront, and hybrid connectivity",
         "level": "intermediate-to-advanced",
-        "roadmaps_count": 11,
         "skills": [
-          "cloud-platforms",
-          "containerization",
+          "aws-vpc-design"
+        ],
+        "primary_skills": ["aws-vpc-design"],
+        "secondary_skills": [],
+        "capabilities": [
+          "vpc-design",
+          "dns-management",
+          "cdn-configuration",
+          "hybrid-networking"
+        ],
+        "estimated_hours": 50,
+        "prerequisites": ["01-aws-fundamentals"]
+      },
+      {
+        "id": "05-aws-database",
+        "name": "AWS Database Agent",
+        "description": "Database architect for RDS, Aurora, DynamoDB, and caching strategies",
+        "level": "intermediate-to-advanced",
+        "skills": [
+          "aws-rds-setup"
+        ],
+        "primary_skills": ["aws-rds-setup"],
+        "secondary_skills": [],
+        "capabilities": [
+          "rds-deployment",
+          "aurora-management",
+          "dynamodb-design",
+          "cache-optimization"
+        ],
+        "estimated_hours": 60,
+        "prerequisites": ["01-aws-fundamentals", "04-aws-networking"]
+      },
+      {
+        "id": "06-aws-security",
+        "name": "AWS Security Agent",
+        "description": "Security architect for WAF, KMS, Secrets Manager, and compliance frameworks",
+        "level": "advanced",
+        "skills": [
+          "aws-security-best-practices",
+          "aws-iam-setup"
+        ],
+        "primary_skills": ["aws-security-best-practices"],
+        "secondary_skills": ["aws-iam-setup"],
+        "capabilities": [
+          "waf-configuration",
+          "encryption-management",
+          "secrets-management",
+          "compliance-audit"
+        ],
+        "estimated_hours": 80,
+        "prerequisites": ["01-aws-fundamentals"]
+      },
+      {
+        "id": "07-aws-serverless",
+        "name": "AWS Serverless Agent",
+        "description": "Serverless architect for Lambda, API Gateway, Step Functions, and event-driven design",
+        "level": "intermediate-to-advanced",
+        "skills": [
+          "aws-lambda-functions"
+        ],
+        "primary_skills": ["aws-lambda-functions"],
+        "secondary_skills": [],
+        "capabilities": [
+          "lambda-development",
+          "api-gateway-design",
+          "event-driven-architecture",
+          "step-functions"
+        ],
+        "estimated_hours": 60,
+        "prerequisites": ["01-aws-fundamentals"]
+      },
+      {
+        "id": "08-aws-devops",
+        "name": "AWS DevOps Agent",
+        "description": "DevOps architect for CI/CD, Infrastructure as Code, monitoring, and container platforms",
+        "level": "advanced",
+        "skills": [
+          "aws-cloudformation",
+          "aws-ecs",
+          "aws-codepipeline",
+          "aws-cloudwatch"
+        ],
+        "primary_skills": ["aws-cloudformation", "aws-ecs"],
+        "secondary_skills": ["aws-codepipeline", "aws-cloudwatch"],
+        "capabilities": [
           "infrastructure-as-code",
-          "devops-practices"
+          "ci-cd-pipelines",
+          "monitoring-observability",
+          "container-platforms"
         ],
-        "roadmaps": [
-          "devops",
-          "devops-beginner",
-          "aws",
-          "best-practices/aws",
-          "docker",
-          "kubernetes",
-          "terraform",
-          "linux",
-          "cloudflare",
-          "git-github",
-          "git-github-beginner",
-          "ai-agents"
-        ],
-        "projects": 12,
-        "estimated_hours": 400,
-        "prerequisites": [
-          "language-fundamentals"
-        ]
+        "estimated_hours": 100,
+        "prerequisites": ["01-aws-fundamentals", "02-aws-compute"]
+      }
+    ],
+    "skills": [
+      {
+        "id": "aws-iam-setup",
+        "name": "AWS IAM Setup",
+        "description": "Configure AWS IAM users, roles, policies, and identity federation",
+        "bonded_agents": ["01-aws-fundamentals", "06-aws-security"],
+        "bond_types": {
+          "01-aws-fundamentals": "PRIMARY_BOND",
+          "06-aws-security": "SECONDARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "15-30 min"
       },
       {
-        "id": "data-aiml",
-        "name": "Data & AI/ML Engineering",
-        "description": "Data engineering, machine learning, AI applications, and data science",
-        "level": "intermediate-to-advanced",
-        "roadmaps_count": 9,
-        "skills": [
-          "data-engineering",
-          "machine-learning",
-          "ai-tools-frameworks",
-          "data-science"
-        ],
-        "roadmaps": [
-          "data-engineer",
-          "data-analyst",
-          "ai-engineer",
-          "machine-learning",
-          "ai-data-scientist",
-          "mlops",
-          "bi-analyst",
-          "ai-agents",
-          "ai-red-teaming"
-        ],
-        "projects": 15,
-        "estimated_hours": 500,
-        "prerequisites": [
-          "language-fundamentals",
-          "algorithms-datastructures",
-          "computer-science"
-        ]
+        "id": "aws-ec2-deployment",
+        "name": "AWS EC2 Deployment",
+        "description": "Launch, configure, and manage EC2 instances with best practices",
+        "bonded_agents": ["02-aws-compute"],
+        "bond_types": {
+          "02-aws-compute": "PRIMARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "5-15 min"
       },
       {
-        "id": "architecture-design",
-        "name": "Architecture & Design Patterns",
-        "description": "System design, architectural patterns, and software design principles",
-        "level": "advanced",
-        "roadmaps_count": 6,
-        "skills": [
-          "system-design",
-          "design-principles",
-          "api-design"
-        ],
-        "roadmaps": [
-          "software-architect",
-          "full-stack",
-          "system-design",
-          "software-design-architecture",
-          "api-design",
-          "design-system"
-        ],
-        "projects": 8,
-        "estimated_hours": 250,
-        "prerequisites": [
-          "backend-frameworks",
-          "database-design",
-          "system-design"
-        ]
+        "id": "aws-s3-management",
+        "name": "AWS S3 Management",
+        "description": "Configure S3 buckets with security, lifecycle, and replication policies",
+        "bonded_agents": ["03-aws-storage"],
+        "bond_types": {
+          "03-aws-storage": "PRIMARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "10-20 min"
       },
       {
-        "id": "specializations",
-        "name": "Specializations & Advanced Roles",
-        "description": "Management, blockchain, gaming, security, and specialized technologies",
-        "level": "advanced",
-        "roadmaps_count": 12,
-        "skills": [
-          "management-leadership",
-          "security-best-practices",
-          "database-design",
-          "specialized-domains"
-        ],
-        "roadmaps": [
-          "product-manager",
-          "engineering-manager",
-          "devrel",
-          "technical-writer",
-          "blockchain",
-          "game-developer",
-          "server-side-game-developer",
-          "cyber-security",
-          "postgresql-dba",
-          "mongodb",
-          "redis"
-        ],
-        "projects": 12,
-        "estimated_hours": 300,
-        "prerequisites": []
+        "id": "aws-vpc-design",
+        "name": "AWS VPC Design",
+        "description": "Design and implement secure, scalable VPC architectures",
+        "bonded_agents": ["04-aws-networking"],
+        "bond_types": {
+          "04-aws-networking": "PRIMARY_BOND"
+        },
+        "complexity": "high",
+        "estimated_time": "30-60 min"
+      },
+      {
+        "id": "aws-rds-setup",
+        "name": "AWS RDS Setup",
+        "description": "Deploy and configure RDS and Aurora database instances",
+        "bonded_agents": ["05-aws-database"],
+        "bond_types": {
+          "05-aws-database": "PRIMARY_BOND"
+        },
+        "complexity": "medium-high",
+        "estimated_time": "20-45 min"
+      },
+      {
+        "id": "aws-lambda-functions",
+        "name": "AWS Lambda Functions",
+        "description": "Develop, deploy, and optimize serverless Lambda functions",
+        "bonded_agents": ["07-aws-serverless"],
+        "bond_types": {
+          "07-aws-serverless": "PRIMARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "10-30 min"
+      },
+      {
+        "id": "aws-security-best-practices",
+        "name": "AWS Security Best Practices",
+        "description": "Implement security controls, encryption, and compliance frameworks",
+        "bonded_agents": ["06-aws-security"],
+        "bond_types": {
+          "06-aws-security": "PRIMARY_BOND"
+        },
+        "complexity": "high",
+        "estimated_time": "30-60 min"
+      },
+      {
+        "id": "aws-cloudformation",
+        "name": "AWS CloudFormation",
+        "description": "Infrastructure as Code with CloudFormation templates and stacks",
+        "bonded_agents": ["08-aws-devops"],
+        "bond_types": {
+          "08-aws-devops": "PRIMARY_BOND"
+        },
+        "complexity": "medium-high",
+        "estimated_time": "10-60 min"
+      },
+      {
+        "id": "aws-codepipeline",
+        "name": "AWS CodePipeline",
+        "description": "Build automated CI/CD pipelines with CodePipeline and CodeBuild",
+        "bonded_agents": ["08-aws-devops"],
+        "bond_types": {
+          "08-aws-devops": "SECONDARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "20-45 min"
+      },
+      {
+        "id": "aws-cloudwatch",
+        "name": "AWS CloudWatch",
+        "description": "Implement monitoring, alerting, and observability with CloudWatch",
+        "bonded_agents": ["08-aws-devops"],
+        "bond_types": {
+          "08-aws-devops": "SECONDARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "15-30 min"
+      },
+      {
+        "id": "aws-ecs",
+        "name": "AWS ECS",
+        "description": "Deploy and manage containerized applications on ECS and Fargate",
+        "bonded_agents": ["02-aws-compute", "08-aws-devops"],
+        "bond_types": {
+          "02-aws-compute": "SECONDARY_BOND",
+          "08-aws-devops": "PRIMARY_BOND"
+        },
+        "complexity": "medium-high",
+        "estimated_time": "20-45 min"
+      },
+      {
+        "id": "aws-cost-optimization",
+        "name": "AWS Cost Optimization",
+        "description": "Analyze costs and implement optimization strategies",
+        "bonded_agents": ["01-aws-fundamentals"],
+        "bond_types": {
+          "01-aws-fundamentals": "SECONDARY_BOND"
+        },
+        "complexity": "medium",
+        "estimated_time": "15-30 min"
+      }
+    ],
+    "commands": [
+      {
+        "id": "aws-check",
+        "name": "AWS Check",
+        "description": "Verify AWS CLI configuration, credentials, and service connectivity",
+        "category": "diagnostics",
+        "allowed_tools": ["Bash", "Read"]
+      },
+      {
+        "id": "aws-costs",
+        "name": "AWS Costs",
+        "description": "Analyze AWS costs, trends, and generate optimization recommendations",
+        "category": "finops",
+        "allowed_tools": ["Bash", "Read"]
+      },
+      {
+        "id": "aws-deploy",
+        "name": "AWS Deploy",
+        "description": "Deploy applications to AWS with automated infrastructure provisioning",
+        "category": "deployment",
+        "allowed_tools": ["Bash", "Read", "Write"]
+      },
+      {
+        "id": "aws-debug",
+        "name": "AWS Debug",
+        "description": "Diagnose and troubleshoot AWS infrastructure issues with guided analysis",
+        "category": "diagnostics",
+        "allowed_tools": ["Bash", "Read", "WebSearch"]
       }
     ],
     "skill_dependencies": {
-      "frontend-frameworks": [
-        "language-fundamentals",
-        "responsive-design"
-      ],
-      "backend-frameworks": [
-        "language-fundamentals",
-        "database-design"
-      ],
-      "api-design": [
-        "backend-frameworks",
-        "database-design"
-      ],
-      "system-design": [
-        "backend-frameworks",
-        "database-design",
-        "algorithms-datastructures"
-      ],
-      "machine-learning": [
-        "language-fundamentals",
-        "algorithms-datastructures",
-        "data-engineering"
-      ],
-      "data-engineering": [
-        "language-fundamentals",
-        "database-design"
-      ],
-      "containerization": [
-        "devops-practices",
-        "backend-frameworks"
-      ],
-      "infrastructure-as-code": [
-        "cloud-platforms",
-        "containerization"
-      ]
+      "aws-ec2-deployment": ["aws-iam-setup", "aws-vpc-design"],
+      "aws-rds-setup": ["aws-iam-setup", "aws-vpc-design", "aws-security-best-practices"],
+      "aws-lambda-functions": ["aws-iam-setup"],
+      "aws-ecs": ["aws-iam-setup", "aws-vpc-design", "aws-ec2-deployment"],
+      "aws-cloudformation": ["aws-iam-setup"],
+      "aws-codepipeline": ["aws-iam-setup", "aws-cloudformation"],
+      "aws-cloudwatch": ["aws-iam-setup"],
+      "aws-security-best-practices": ["aws-iam-setup"],
+      "aws-s3-management": ["aws-iam-setup"],
+      "aws-vpc-design": ["aws-iam-setup"],
+      "aws-cost-optimization": ["aws-iam-setup"]
     },
-    "roadmap_to_agent_mapping": {
-      "javascript": "foundation-core",
-      "typescript": "foundation-core",
-      "python": "foundation-core",
-      "java": "foundation-core",
-      "rust": "foundation-core",
-      "golang": "foundation-core",
-      "cpp": "foundation-core",
-      "php": "foundation-core",
-      "kotlin": "foundation-core",
-      "swift-ui": "foundation-core",
-      "html": "foundation-core",
-      "css": "foundation-core",
-      "shell-bash": "foundation-core",
-      "sql": "foundation-core",
-      "datastructures-and-algorithms": "foundation-core",
-      "computer-science": "foundation-core",
-      "code-review": "foundation-core",
-      "prompt-engineering": "foundation-core",
-      "frontend": "frontend-ui",
-      "frontend-beginner": "frontend-ui",
-      "ux-design": "frontend-ui",
-      "react": "frontend-ui",
-      "vue": "frontend-ui",
-      "angular": "frontend-ui",
-      "nextjs": "frontend-ui",
-      "react-native": "frontend-ui",
-      "flutter": "frontend-ui",
-      "design-system": "frontend-ui",
-      "backend": "backend-api",
-      "backend-beginner": "backend-api",
-      "full-stack": "backend-api",
-      "nodejs": "backend-api",
-      "spring-boot": "backend-api",
-      "aspnet-core": "backend-api",
-      "laravel": "backend-api",
-      "api-design": "backend-api",
-      "graphql": "backend-api",
-      "devops": "devops-cloud",
-      "devops-beginner": "devops-cloud",
-      "aws": "devops-cloud",
-      "docker": "devops-cloud",
-      "kubernetes": "devops-cloud",
-      "terraform": "devops-cloud",
-      "linux": "devops-cloud",
-      "cloudflare": "devops-cloud",
-      "git-github": "devops-cloud",
-      "git-github-beginner": "devops-cloud",
-      "ai-agents": "devops-cloud",
-      "data-engineer": "data-aiml",
-      "data-analyst": "data-aiml",
-      "ai-engineer": "data-aiml",
-      "machine-learning": "data-aiml",
-      "ai-data-scientist": "data-aiml",
-      "mlops": "data-aiml",
-      "bi-analyst": "data-aiml",
-      "ai-red-teaming": "data-aiml",
-      "software-architect": "architecture-design",
-      "system-design": "architecture-design",
-      "software-design-architecture": "architecture-design",
-      "product-manager": "specializations",
-      "engineering-manager": "specializations",
-      "devrel": "specializations",
-      "technical-writer": "specializations",
-      "blockchain": "specializations",
-      "game-developer": "specializations",
-      "server-side-game-developer": "specializations",
-      "cyber-security": "specializations",
-      "postgresql-dba": "specializations",
-      "mongodb": "specializations",
-      "redis": "specializations"
+    "agent_to_skill_mapping": {
+      "01-aws-fundamentals": ["aws-iam-setup", "aws-cost-optimization"],
+      "02-aws-compute": ["aws-ec2-deployment", "aws-ecs"],
+      "03-aws-storage": ["aws-s3-management"],
+      "04-aws-networking": ["aws-vpc-design"],
+      "05-aws-database": ["aws-rds-setup"],
+      "06-aws-security": ["aws-security-best-practices", "aws-iam-setup"],
+      "07-aws-serverless": ["aws-lambda-functions"],
+      "08-aws-devops": ["aws-cloudformation", "aws-ecs", "aws-codepipeline", "aws-cloudwatch"]
     },
     "learning_paths": {
-      "frontend-developer": {
-        "duration_months": 6,
-        "agents": [
-          "foundation-core",
-          "frontend-ui"
-        ],
-        "skills_sequence": [
-          "language-fundamentals",
-          "responsive-design",
-          "frontend-frameworks",
-          "algorithms-datastructures"
-        ],
-        "estimated_hours": 600
+      "aws-fundamentals": {
+        "description": "Master AWS core services and account management",
+        "agents": ["01-aws-fundamentals"],
+        "skills_sequence": ["aws-iam-setup", "aws-cost-optimization"],
+        "estimated_hours": 40
       },
-      "backend-developer": {
-        "duration_months": 12,
-        "agents": [
-          "foundation-core",
-          "backend-api",
-          "devops-cloud"
-        ],
+      "aws-compute-specialist": {
+        "description": "Become an AWS compute and container expert",
+        "agents": ["01-aws-fundamentals", "02-aws-compute", "04-aws-networking"],
         "skills_sequence": [
-          "language-fundamentals",
-          "algorithms-datastructures",
-          "database-design",
-          "backend-frameworks",
-          "api-design",
-          "security-best-practices",
-          "devops-practices"
+          "aws-iam-setup",
+          "aws-vpc-design",
+          "aws-ec2-deployment",
+          "aws-ecs"
         ],
-        "estimated_hours": 1200
+        "estimated_hours": 120
       },
-      "full-stack-developer": {
-        "duration_months": 14,
-        "agents": [
-          "foundation-core",
-          "frontend-ui",
-          "backend-api",
-          "devops-cloud"
-        ],
+      "aws-serverless-developer": {
+        "description": "Build serverless applications on AWS",
+        "agents": ["01-aws-fundamentals", "07-aws-serverless", "05-aws-database"],
         "skills_sequence": [
-          "language-fundamentals",
-          "responsive-design",
-          "frontend-frameworks",
-          "backend-frameworks",
-          "api-design",
-          "database-design",
-          "devops-practices"
+          "aws-iam-setup",
+          "aws-lambda-functions",
+          "aws-rds-setup"
         ],
-        "estimated_hours": 1400
+        "estimated_hours": 100
       },
-      "devops-engineer": {
-        "duration_months": 18,
-        "agents": [
-          "foundation-core",
-          "devops-cloud",
-          "architecture-design"
-        ],
+      "aws-devops-engineer": {
+        "description": "Master CI/CD and Infrastructure as Code on AWS",
+        "agents": ["01-aws-fundamentals", "02-aws-compute", "08-aws-devops"],
         "skills_sequence": [
-          "language-fundamentals",
-          "cloud-platforms",
-          "containerization",
-          "infrastructure-as-code",
-          "devops-practices",
-          "security-best-practices",
-          "system-design"
+          "aws-iam-setup",
+          "aws-vpc-design",
+          "aws-ec2-deployment",
+          "aws-ecs",
+          "aws-cloudformation",
+          "aws-codepipeline",
+          "aws-cloudwatch"
         ],
-        "estimated_hours": 1800
+        "estimated_hours": 180
       },
-      "data-engineer": {
-        "duration_months": 12,
-        "agents": [
-          "foundation-core",
-          "data-aiml",
-          "devops-cloud"
-        ],
+      "aws-security-specialist": {
+        "description": "Implement enterprise security on AWS",
+        "agents": ["01-aws-fundamentals", "04-aws-networking", "06-aws-security"],
         "skills_sequence": [
-          "language-fundamentals",
-          "algorithms-datastructures",
-          "database-design",
-          "data-engineering",
-          "devops-practices"
+          "aws-iam-setup",
+          "aws-vpc-design",
+          "aws-security-best-practices"
         ],
-        "estimated_hours": 1200
+        "estimated_hours": 140
       },
-      "ml-engineer": {
-        "duration_months": 18,
+      "aws-solutions-architect": {
+        "description": "Full-stack AWS architecture expertise",
         "agents": [
-          "foundation-core",
-          "data-aiml",
-          "devops-cloud"
+          "01-aws-fundamentals",
+          "02-aws-compute",
+          "03-aws-storage",
+          "04-aws-networking",
+          "05-aws-database",
+          "06-aws-security",
+          "07-aws-serverless",
+          "08-aws-devops"
         ],
         "skills_sequence": [
-          "language-fundamentals",
-          "algorithms-datastructures",
-          "computer-science",
-          "data-science",
-          "machine-learning",
-          "data-engineering",
-          "devops-practices"
+          "aws-iam-setup",
+          "aws-vpc-design",
+          "aws-s3-management",
+          "aws-ec2-deployment",
+          "aws-rds-setup",
+          "aws-lambda-functions",
+          "aws-ecs",
+          "aws-security-best-practices",
+          "aws-cloudformation",
+          "aws-codepipeline",
+          "aws-cloudwatch",
+          "aws-cost-optimization"
         ],
-        "estimated_hours": 1800
-      },
-      "ai-engineer": {
-        "duration_months": 18,
-        "agents": [
-          "foundation-core",
-          "data-aiml",
-          "backend-api"
-        ],
-        "skills_sequence": [
-          "language-fundamentals",
-          "machine-learning",
-          "ai-tools-frameworks",
-          "data-science",
-          "api-design",
-          "backend-frameworks"
-        ],
-        "estimated_hours": 1800
+        "estimated_hours": 400
       }
     }
   }
