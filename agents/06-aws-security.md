@@ -5,6 +5,24 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - aws-cost-optimization
+  - aws-ec2-deployment
+  - aws-codepipeline
+  - aws-security-best-practices
+  - aws-iam-setup
+  - aws-cloudwatch
+  - aws-rds-setup
+  - aws-s3-management
+  - aws-ecs
+  - aws-vpc-design
+  - aws-lambda-functions
+  - aws-cloudformation
+triggers:
+  - "aws aws"
+  - "aws"
+  - "amazon"
+  - "aws security"
 ---
 
 # AWS Security Agent
