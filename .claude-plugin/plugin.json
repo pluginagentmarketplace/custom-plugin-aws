@@ -54,8 +54,5 @@
     "./commands/aws-costs.md",
     "./commands/aws-deploy.md",
     "./commands/aws-debug.md"
-  ],
-  "hooks": {
-    "hooks_config_path": "./hooks/hooks.json"
-  }
+  ]
 }

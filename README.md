@@ -60,7 +60,7 @@
 
 ```bash
 # Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-aws
+/plugin marketplace add pluginagentmarketplace/custom-plugin-aws
 
 # Install the plugin
 /plugin install aws-cloud-assistant@pluginagentmarketplace-aws
